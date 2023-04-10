@@ -1,0 +1,1725 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/brands.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/regular.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/solid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/svg-with-js.min.css">
+    <!-- BOOTSTRAP ICONS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@300;400;800&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- end owl -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body onload="startTimer()">
+    <!-- header -->
+    <header class="header navbar-scrolling">
+      <div class="top_header d-none d-xl-block">
+        <div class="container">
+          <div class="row row1 d-flex justify-content-between align-items-center">
+            <div class="col offset-2">
+              <div class="right_header">
+                <ul class="top_list_ul">
+                  <li class="top_list line">
+                    <a href="">support@domain.com</a>
+                  </li>
+                  <li class="top_list line">Mon to Fri : 9:00am to 6:00pm</li>
+                  <li class="top_list me-4">Fairview Ave, El Monte, CA 91732</li>
+                  <a href="#">
+                    <button type="button" class="btn add_list_btn btn-sm px-4 ms-5">
+                      <i class="bi bi-list-ul"></i> Add Listings </button>
+                    </i>
+                  </a>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom_header">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-2 col-auto">
+              <a class="revus_logo" href="index.html">
+                <img src="/revus/images/logo.png" alt="logo">
+              </a>
+            </div>
+            <div class="col-lg-2 mt-4">
+              <span class="icon">
+                <i class="bi bi-telephone-inbound"></i>
+              </span>
+              <span class="header_content d-none d-md-block d-lg-none d-xl-block">Call Us Today!</span>
+              <br>
+              <span class="header_contact d-none d-md-block d-lg-none d-xl-block">+1 755 302 8549</span>
+            </div>
+            <div class="col-lg d-none d-lg-block ps-5 ms-5 mt-4">
+              <div class="navbar navbar-expand-md justify-content-end ps-5 ms-5" id="nav">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="main-menu navbar-nav">
+                    <li class="nav-item item active">
+                      <a class="nav-link custom_nav" href="home.html">HOME</a>
+                    </li>
+                    <li class="nav-item item dropdown">
+                      <div class="dropdown open">
+                        <a class="btn dropdown-toggle" id="triggerId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> INVENTORY </a>
+                        <div class="dropdown-menu" aria-labelledby="triggerId">
+                          <a class="dropdown-item" href="#">INVENTORY LIST</a>
+                          <a class="dropdown-item" href="#">INVENTORY GRID</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="nav-item item active">
+                      <a class="nav-link custom_nav" href="home.html">ABOUT</a>
+                    </li>
+                    <li class="nav-item item dropdown">
+                      <div class="dropdown open">
+                        <a class="btn dropdown-toggle" id="triggerId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> PAGES </a>
+                        <div class="dropdown-menu" aria-labelledby="triggerId">
+                          <a class="dropdown-item" href="#">TYPOGRAPHY</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="nav-item item dropdown">
+                      <div class="dropdown open">
+                        <a class="btn dropdown-toggle" id="triggerId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> NEWS </a>
+                        <div class="dropdown-menu" aria-labelledby="triggerId">
+                          <a class="dropdown-item" href="#">BLOG MAIN</a>
+                          <a class="dropdown-item" href="#">BLOG POST</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="nav-item item active">
+                      <a class="nav-link custom_nav" href="home.html">CONTACT</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- slider1 -->
+    <div class="main">
+      <div class="slider">
+        <div class="background_img1 mt-5">
+          <img class="img1" id="img" src="./images/bg-1.jpg" alt="bg1">
+          <div class="slide-left">
+            <div class="fade-in">
+              <div class="shape">
+                <div class="para">
+                  <div class="top_line">
+                    <p>LUXURY UNLEASHED</p>
+                  </div>
+                  <div class="heading">
+                    <p class="title">MAZDA</p>
+                    <p class="sub_title">CX3'19</p>
+                  </div>
+                  <div class="rs">
+                    <p>
+                      <sup>$</sup>249 <span class="slash">/M</span>
+                    </p>
+                    <p class="months">FOR 24 MONTHS</p>
+                  </div>
+                  <div class="slider-line"></div>
+                  <div class="learn">
+                    <a href="#">LEARN MORE</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- slider2 -->
+    <!-- <div class="slider2"><div class="background_img2"><img class="img2" src="./images/bg-2.jpg" alt="bg2"><div class="slide-left"><div class="fade-in"><div class="shape"><div class="para"><div class="top_line"><p>EXPERT AUTO SERVICES</p></div><div class="heading"><p class="title">Premium Cars Dealers</p><p class="sub_title">Cars Dealers</p></div></div></div></div></div></div></div> -->
+    <!--tab section -->
+    <section class=" bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="tab">
+              <ul class="nav nav-tabs align" id="ex1">
+                <li class="b-find-nav-item nav-item">
+                  <a class="nav-link active car" data-toggle="tab" data-mdb-toggle="tab" href="#ex-with-icons-tabs-1" role="tab" aria-controls="ex-with-icons-tabs-1" aria-selected="true" id="ex1-tab-1">All Car Types</a>
+                </li>
+                <li class="b-find-nav-item nav-item">
+                  <a class="nav-link car" data-toggle="tab" data-mdb-toggle="tab" href="#ex-with-icons-tabs-2" role="tab" aria-controls="ex-with-icons-tabs-2" aria-selected="false" id="ex1-tab-2">New Cars</a>
+                </li>
+                <li class="b-find-nav-item nav-item">
+                  <a class="nav-link car" data-toggle="tab" data-mdb-toggle="tab" href="#ex-with-icons-tabs-3" role="tab" aria-controls="ex-with-icons-tabs-3" aria-selected="false" id="ex1-tab-3">Used Cars</a>
+                </li>
+              </ul>
+              <div class="tab-content clearfix">
+                <div class="tab-pane fade show active" id="ex-with-icons-tabs-1" role="tabpanel" aria-labelledby="ex-with-icons-tabs-1">
+                  <div class="tab-content" id="nav-tab">
+                    <div class="tab_main">
+                      <form class="tab_form">
+                        <div class="tab_row">
+                          <div class="tab_inner">
+                            <div class="container tab-list">
+                              <ul class="nav nav-tabs ">
+                                <li class="dropdown">
+                                  <span class="tab_label_number">01 Select Make</span>
+                                  <a class="dropdown-toggle dd-1" data-toggle="dropdown" href="#">Audi</a>
+                                  <ul class="dropdown-menu action">
+                                    <li>
+                                      <a href="#">Audi</a>
+                                    </li>
+                                    <li>
+                                      <a href="#">BMW</a>
+                                    </li>
+                                    <li>
+                                      <a href="#">Opel</a>
+                                    </li>
+                                  </ul>
+                                </li>
+                                <li class="dropdown">
+                                  <span class="tab_label_number">02 Select Model</span>
+                                  <a class="dropdown-toggle dd-1" data-toggle="dropdown" href="#">Model 1</a>
+                                  <ul class="dropdown-menu action">
+                                    <li>
+                                      <a href="#">Model 1</a>
+                                    </li>
+                                    <li>
+                                      <a href="#">Model 2</a>
+                                    </li>
+                                    <li>
+                                      <a href="#">Model 3</a>
+                                    </li>
+                                  </ul>
+                                </li>
+                                <li class="dropdown">
+                                  <span class="tab_label_number">03 Price Range</span>
+                                  <a class="dropdown-toggle dd-1" data-toggle="dropdown" href="#">Max $5000</a>
+                                  <ul class="dropdown-menu action">
+                                    <li>
+                                      <a href="#">Max $5000</a>
+                                    </li>
+                                    <li>
+                                      <a href="#">Max $15000</a>
+                                    </li>
+                                    <li>
+                                      <a href="#">Max $25000</a>
+                                    </li>
+                                  </ul>
+                                </li>
+                                <button class="tab_btn btn btn-primary">Search</button>
+                              </ul>
+                              <div class="checkbox-group">
+                                <span class="checkbox-item">
+                                  <input class="check" id="newCars" type="checkbox" checked="checked" />
+                                  <label class="forms__label" for="newCars">New Cars</label>
+                                </span>
+                                <span class="checkbox-item">
+                                  <input class="check" id="usedCars" type="checkbox" />
+                                  <label class="forms__label" for="usedCars">Used Cars</label>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="ex-with-icons-tabs-2" role="tabpanel" aria-labelledby="ex-with-icons-tabs-2">
+                  <div class="tab-content" id="nav-tab">
+                    <div class="tab_main">
+                      <form class="tab_form" style="background-color: #fff;">
+                        <div class="tab_row">
+                          <div class="tab_inner">
+                            <div class="container tab-list">
+                              <ul class="nav nav-tabs ">
+                                <li class="dropdown">
+                                  <span class="tab_label_number">01 Select Make</span>
+                                  <a class="dropdown-toggle dd-1" data-toggle="dropdown" href="#">Audi</a>
+                                  <ul class="dropdown-menu action">
+                                    <li>
+                                      <a href="#">Audi</a>
+                                    </li>
+                                    <li>
+                                      <a href="#">BMW</a>
+                                    </li>
+                                    <li>
+                                      <a href="#">Opel</a>
+                                    </li>
+                                  </ul>
+                                </li>
+                                <li class="dropdown">
+                                  <span class="tab_label_number">02 Select Model</span>
+                                  <a class="dropdown-toggle dd-1" data-toggle="dropdown" href="#">Model 1</a>
+                                  <ul class="dropdown-menu action">
+                                    <li>
+                                      <a href="#">Model 1</a>
+                                    </li>
+                                    <li>
+                                      <a href="#">Model 2</a>
+                                    </li>
+                                    <li>
+                                      <a href="#">Model 3</a>
+                                    </li>
+                                  </ul>
+                                </li>
+                                <li class="dropdown">
+                                  <span class="tab_label_number">03 Price Range</span>
+                                  <a class="dropdown-toggle dd-1" data-toggle="dropdown" href="#">Max $5000</a>
+                                  <ul class="dropdown-menu action">
+                                    <li>
+                                      <a href="#">Max $5000</a>
+                                    </li>
+                                    <li>
+                                      <a href="#">Max $15000</a>
+                                    </li>
+                                    <li>
+                                      <a href="#">Max $25000</a>
+                                    </li>
+                                  </ul>
+                                </li>
+                                <button class="tab_btn btn btn-primary">Search</button>
+                              </ul>
+                              <div class="checkbox-group">
+                                <span class="checkbox-item">
+                                  <input class="check" id="newCars" type="checkbox" checked="checked" />
+                                  <label class="forms__label" for="newCars">New Cars</label>
+                                </span>
+                                <span class="checkbox-item">
+                                  <input class="check" id="usedCars" type="checkbox" />
+                                  <label class="forms__label" for="usedCars">Used Cars</label>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="ex-with-icons-tabs-3" role="tabpanel" aria-labelledby="ex-with-icons-tabs-3">
+                  <div class="tab-content" id="nav-tab">
+                    <div class="tab_main">
+                      <form class="tab_form">
+                        <div class="tab_row">
+                          <div class="tab_inner">
+                            <div class="container tab-list">
+                              <ul class="nav nav-tabs ">
+                                <li class="dropdown">
+                                  <span class="tab_label_number">01 Select Make</span>
+                                  <a class="dropdown-toggle dd-1" data-toggle="dropdown" href="#">Audi</a>
+                                  <ul class="dropdown-menu action">
+                                    <li>
+                                      <a href="#">Audi</a>
+                                    </li>
+                                    <li>
+                                      <a href="#">BMW</a>
+                                    </li>
+                                    <li>
+                                      <a href="#">Opel</a>
+                                    </li>
+                                  </ul>
+                                </li>
+                                <li class="dropdown">
+                                  <span class="tab_label_number">02 Select Model</span>
+                                  <a class="dropdown-toggle dd-1" data-toggle="dropdown" href="#">Model 1</a>
+                                  <ul class="dropdown-menu action">
+                                    <li>
+                                      <a href="#">Model 1</a>
+                                    </li>
+                                    <li>
+                                      <a href="#">Model 2</a>
+                                    </li>
+                                    <li>
+                                      <a href="#">Model 3</a>
+                                    </li>
+                                  </ul>
+                                </li>
+                                <li class="dropdown">
+                                  <span class="tab_label_number">03 Price Range</span>
+                                  <a class="dropdown-toggle dd-1" data-toggle="dropdown" href="#">Max $5000</a>
+                                  <ul class="dropdown-menu action">
+                                    <li>
+                                      <a href="#">Max $5000</a>
+                                    </li>
+                                    <li>
+                                      <a href="#">Max $15000</a>
+                                    </li>
+                                    <li>
+                                      <a href="#">Max $25000</a>
+                                    </li>
+                                  </ul>
+                                </li>
+                                <button class="tab_btn btn btn-primary">Search</button>
+                              </ul>
+                              <div class="checkbox-group">
+                                <span class="checkbox-item">
+                                  <input class="check" id="newCars" type="checkbox" checked="checked" />
+                                  <label class="forms__label" for="newCars">New Cars</label>
+                                </span>
+                                <span class="checkbox-item">
+                                  <input class="check" id="usedCars" type="checkbox" />
+                                  <label class="forms__label" for="usedCars">Used Cars</label>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- tab section end -->
+    <!-- car image section -->
+    <section class="bg-img3 section-default ps-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6 movie">
+            <div class="w-content">HELPS YOU TO FIND YOUR NEXT CAR EASILY</div>
+            <h2 class="w-title mt-0">Welcome to <span class="w-primary">Revus</span>
+            </h2>
+            <p class="w-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit sed eiusmod tempor incididu et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ull laboris aliquip ex ea commodo consequat. Duis aute irure dolorin reprehenderits volupta velit dolore fugiat nulla pariatur excepteur sint occaecat cupidatat. </p>
+            <p class="w-text"> Non proident sunt ind culpa qudesa officia deserunt mollit anim est laborum. Sed per unde omnis iste natus error sit voluptatem accusantium doloremque laudantium tom eaque ipsa quae ab illo inventore veritatis architecto. </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-7">
+            <ul class="w-welcome-list list-unstyled d-sm-flex justify-content-around">
+              <li class="w-welcome-list-1">
+                <img src="./images/steering-wheel.png" alt="img" class="wifi">
+                <p class="wheel">WE OFFERS LOWER <br> CARS PRICES </p>
+              </li>
+              <li class="w-welcome-list-1">
+                <img src="./images/image_2023_03_28T06_37_16_012Z.png" alt="img" class="wifi">
+                <p class="wheel">LARGEST CARS <br> DEALERSHIP </p>
+              </li>
+              <li class="w-welcome-list-1">
+                <img src="./images/image_2023_03_28T06_37_16_013Z.png" alt="img" class="wifi">
+                <p class="wheel">MULTIPOINT SAFET <br> CHECKS OFFERS </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- car image section end-->
+    <!-- slider section start -->
+    <section class="section-carousel ps-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="w-content">HELPS YOU TO FIND YOUR NEXT CAR EASILY</div>
+            <h2 class="w-title mt-0">Featured <span class="w-primary">Vehicles</span>
+            </h2>
+            <button class="slick-prev slick-arrow" aria-label="Previous" type="button"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="carousel_inner bg-dark">
+      <div class="slider">
+        <div class="owl-carousel owl-theme ps-1 pe-1">
+          <div class="display">
+            <div class="all_image">
+              <a href="#">
+                <img src="./images/1.jpg" alt="">
+              </a>
+              <div class="footer mt-2">
+                <div class="footer_title text-center py-4 mx-auto">
+                  <span>Audi Q2 L35 Quattro</span>
+                </div>
+                <ul class="b-goods-f__list list-unstyled py-1">
+                  <li class="b-goods-f__list-item">
+                    <i class="bi bi-speedometer"></i>
+                    <span> 35,000km</span>
+                  </li>
+                  <li class="b-goods-f__list-item">
+                    <i class="bi bi-car-front"></i>
+                    <span> Model: 2017</span>
+                  </li>
+                  <li class="b-goods-f__list-item">
+                    <i class="bi bi-gear-wide"></i>
+                    </i>
+                    <span> Auto - Petrol</span>
+                  </li>
+              </div>
+            </div>
+          </div>
+          <div class="all_image">
+            <a href="#">
+              <img src="./images/2.jpg" alt="">
+            </a>
+            <div class="footer mt-2">
+              <div class="footer_title text-center py-4 mx-auto">
+                <span>Ford Mustang SZ3</span>
+              </div>
+              <ul class="b-goods-f__list list-unstyled py-1">
+                <li class="b-goods-f__list-item">
+                  <i class="bi bi-speedometer"></i>
+                  <span> 35,000km</span>
+                </li>
+                <li class="b-goods-f__list-item">
+                  <i class="bi bi-car-front"></i>
+                  <span> Model: 2017</span>
+                </li>
+                <li class="b-goods-f__list-item">
+                  <i class="bi bi-gear-wide"></i>
+                  </i>
+                  <span> Auto - Petrol</span>
+                </li>
+            </div>
+          </div>
+          <div class="all_image">
+            <a href="#">
+              <img src="./images/3.jpg" alt="">
+            </a>
+            <div class="footer mt-2">
+              <div class="footer_title text-center py-4 mx-auto">
+                <span>Mercedes Benz C Class</span>
+              </div>
+              <ul class="b-goods-f__list list-unstyled py-1">
+                <li class="b-goods-f__list-item text-center">
+                  <i class="bi bi-speedometer"></i>
+                  <span> 35,000km</span>
+                </li>
+                <li class="b-goods-f__list-item text-center">
+                  <i class="bi bi-car-front"></i>
+                  <span> Model: 2017</span>
+                </li>
+                <li class="b-goods-f__list-item text-center">
+                  <i class="bi bi-gear-wide"></i>
+                  </i>
+                  <span>Auto - Petrol</span>
+                </li>
+            </div>
+          </div>
+          <div class="all_image">
+            <a href="#">
+              <img src="./images/4.jpg" alt="">
+            </a>
+            <div class="footer mt-2">
+              <div class="footer_title text-center py-4 mx-auto">
+                <span>Skoda KodiaQ 2019</span>
+              </div>
+              <ul class="b-goods-f__list list-unstyled py-1">
+                <li class="b-goods-f__list-item">
+                  <i class="bi bi-speedometer"></i>
+                  <span> 35,000km</span>
+                </li>
+                <li class="b-goods-f__list-item">
+                  <i class="bi bi-car-front"></i>
+                  <span> Model: 2017</span>
+                </li>
+                <li class="b-goods-f__list-item">
+                  <i class="bi bi-gear-wide"></i>
+                  </i>
+                  <span> Auto - Petrol</span>
+                </li>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <button type="button" class="btn ms-5 mb-5 mt-0 add_list_btn btn-lg section-carousel__btn">
+              <i class="bi bi-list-ul"></i> View All Cars Listings </button>
+            </div>
+          </div>
+        </div>
+      </section>     
+    <!-- slider section end -->
+
+    <!-- services section start -->
+    <section class="services py-5 bg-light">
+      <div class="container mt-5" style="max-width: 1170px;">
+        <div class="row">
+          <div class="col-lg-6">
+            <ul class="b-services-nav nav" id="servicesTab">
+              <li class="b-services-nav__item nav-item col-lg-6 col-md-4 col-sm-12">
+                <a class="b-services-nav__link nav-link active show" id="repairing-tab" data-toggle="tab" href="#repairing" role="tab" aria-controls="repairing" aria-selected="true" style="text-decoration:none;">
+                  <span class="b-services-nav__number">01</span>
+                  <i class="bi bi-car-front"></i>
+                  <span class="b-services-nav__info">Parts Repairing</span>
+                </a>
+              </li>
+              <li class="b-services-nav__item nav-item col-lg-6 col-sm-12 col-md-4">
+                <a class="b-services-nav__link nav-link" id="inspection-tab" data-toggle="tab" href="#inspection" aria-controls="inspection" aria-selected="false" style="text-decoration: none;">
+                  <span class="b-services-nav__number">02</span>
+                  <i class="bi bi-gear-wide"></i>
+                  <span class="b-services-nav__info">Car Inspection</span>
+                </a>
+              </li>
+              <li class="b-services-nav__item nav-item col-lg-6 col-md-4">
+                <a class="b-services-nav__link nav-link" id="trade-tab" data-toggle="tab" href="#trade" aria-controls="trade" aria-selected="false" style="text-decoration: none;">
+                  <span class="b-services-nav__number">03</span>
+                  <i class="bi bi-ev-front"></i>
+                  <span class="b-services-nav__info">Vehicle Trade-In</span>
+                </a>
+              </li>
+              <li class="b-services-nav__item nav-item col-lg-6 col-md-4">
+                <a class="b-services-nav__link nav-link" id="painting-tab" data-toggle="tab" href="#painting" aria-controls="painting" aria-selected="false" style="text-decoration: none;">
+                  <span class="b-services-nav__number">04</span>
+                  <i class="bi bi-brush"></i>
+                  <span class="b-services-nav__info">Auto Painting</span>
+                </a>
+              </li>
+              <li class="b-services-nav__item nav-item col-lg-6 col-md-4">
+                <a class="b-services-nav__link nav-link" id="financing-tab" data-toggle="tab" href="#financing" aria-controls="financing" aria-selected="false" style="text-decoration: none;">
+                  <span class="b-services-nav__number">05</span>
+                  <i class="bi bi-cash-coin"></i>
+                  <span class="b-services-nav__info">Auto Financing</span>
+                </a>
+              </li>
+              <li class="b-services-nav__item nav-item col-lg-6 col-md-4">
+                <a class="b-services-nav__link nav-link" id="delivery-tab" data-toggle="tab" href="#delivery" aria-controls="delivery" aria-selected="false" style="text-decoration: none;">
+                  <span class="b-services-nav__number">06</span>
+                  <i class="bi bi-truck-front"></i>
+                  <span class="b-services-nav__info">Vehicle Delivery</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <div class="w-content">HELPS YOU TO FIND YOUR NEXT CAR EASILY</div>
+            <h2 class="w-title mt-0">Services We <span class="w-primary">Offer</span>
+            </h2>
+            <div class="hand mb-4">
+              <img class="img-fluid" src="./images/1 (1).jpg" alt="">
+            </div>
+            <div class="image_bottom_title">
+              <h3>Parts Repairing</h3>
+            </div>
+            <div class="p justify-content-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam hic minus perspiciatis error eum, doloribus ratione similique dolorum officia doloremque rem architecto adipisci. Culpa ducimus dolores ab in unde quia.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- services section end  -->
+    
+    <!-- booking section start -->
+    <section class="booking">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6">
+            <div class="booking_content ps-5 ms-5">
+              <h3 class="head">Book your Free Car Inspection</h3>
+              <p class="line_down">Labore dolore magna aliqua minim ipsum veniam quis nostrud exercitation</p>
+            </div>
+          </div>
+          <div class="col-xl-6">
+            <div class="booking_right">
+              <div class="register ms-5">
+                <a class="btn add_list_btn btn-lg section-carousel__btn">GET REGISTERED</a>
+              </div>
+              <div class="contacts">
+                <div class="contacts__info">Call Us For Booking Vehicle</div>
+                <a class="contacts__phone" href="tel:+17553028549">
+                  <i class="bi bi-telephone-inbound" style="color: #d01818;"></i> +1 (755) 302-8549 </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- booking section end -->
+    <div class="multiple_cards pb-5 mb-5">
+      <div class="container" style="max-width: 1170px;">
+        <div class="row custom_row">
+          <div class="col-xl-2"></div>
+          <div class="col-md-3 col-xl-2 me-3 cc bg-light">
+            <div class="card__content text-center">
+              <span class="title1">VEHICLES STOCK</span>
+              <br>
+              <span class="num" id="spin">3874</span>
+            </div>
+          </div>
+          <div class="col-md-3 col-xl-2 me-3 cc bg-light">
+            <div class="card__content text-center">
+              <span class="title1">DEALERS SERVED </span>
+              <br>
+              <span class="num"> 299</span>
+              <span class="sign">+</span>
+            </div>
+          </div>
+          <div class="col-md-3 col-xl-2 me-3 cc bg-light">
+            <div class="card__content text-center">
+              <span class="title1">HAPPY CUSTOMERS</span>
+              <br>
+              <span class="num">6403</span>
+            </div>
+          </div>
+          <div class="col-md-3 col-xl-2 me-3 cc bg-light">
+            <div class="card__content text-center">
+              <span class="title1">VEHICLES ON SALE</span>
+              <br>
+              <span>
+                <span class="num">1450</span>
+                <span class="sign">+</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- section end -->
+    <!-- section start cards -->
+    <div class="sction_cards mb-5 pb-5">
+      <div class="container" style="max-width: 1170px;">
+        <!-- <div class="container"> -->
+        <div class="row">
+          <div class="col-12 text-center">
+            <div class="w-content">HELPS YOU TO FIND PERFECT CAR</div>
+            <h2 class="w-title mt-0">Our Vehicles <span class="w-primary"> Listing </span>
+            </h2>
+            <ul class="tabs_card justify-content-center">
+              <li class="tabs_card_li px-3 mx-2">
+                <a href="">Show All</a>
+              </li>
+              <li class="tabs_card_li px-3">
+                <a href="">BMW</a>
+              </li>
+              <li class="tabs_card_li px-3 mx-2">
+                <a href="">Honda</a>
+              </li>
+              <li class="tabs_card_li px-3 mx-2">
+                <a href="">Mercedes</a>
+              </li>
+              <li class="tabs_card_li px-3 mx-2">
+                <a href="">Range Rover</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-xl-4 col-lg-4 col-md-6">
+            <div class="display">
+              <div class="all_image">
+                <a href="#">
+                  <img class="img-scale" src="./images/1 (2).jpg" alt="">
+                </a>
+                <div class="footer footer2">
+                  <div class="footer_title text-center py-4 mx-auto">
+                    <span>Jaguar GX 490i</span>
+                  </div>
+                  <ul class="b-goods-f__list ul_custom list-unstyled text-center py-1">
+                    <li class="b-goods-f__list-item s">
+                      <span> 35,000km</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> 2019</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> Manual</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> Petrol</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> 160hp</span>
+                    </li>
+                  </ul>
+                  <div class="dollar text-center pb-4">$30,480</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6">
+            <div class="display">
+              <div class="all_image">
+                <a href="#">
+                  <img class="img-scale" src="./images/2 (1).jpg" alt="">
+                </a>
+                <div class="footer footer2">
+                  <div class="footer_title text-center py-4 mx-auto">
+                    <span class="b-goods-f__label bg-primary">NEW</span>
+                    <span>Volkswagen Tiguan</span>
+                  </div>
+                  <ul class="b-goods-f__list ul_custom list-unstyled text-center py-1">
+                    <li class="b-goods-f__list-item s">
+                      <span> 35,000km</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> 2019</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> Manual</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> Petrol</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> 160hp</span>
+                    </li>
+                  </ul>
+                  <div class="dollar text-center pb-4">$45,800</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6">
+            <div class="display">
+              <div class="all_image">
+                <a href="#">
+                  <img class="img-scale" src="./images/3 (1).jpg" alt="">
+                </a>
+                <div class="footer footer2">
+                  <div class="footer_title text-center py-4 mx-auto">
+                    <span>Tesla Model RX3</span>
+                  </div>
+                  <ul class="b-goods-f__list ul_custom list-unstyled text-center py-1">
+                    <li class="b-goods-f__list-item s">
+                      <span> 35,000km</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> 2019</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> Manual</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> Petrol</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> 160hp</span>
+                    </li>
+                  </ul>
+                  <div class="dollar text-center pb-4">$18,250</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-xl-4 col-lg-4 col-md-6">
+            <div class="display">
+              <div class="all_image">
+                <a href="#">
+                  <img class="img-scale" src="./images/4 (1).jpg" alt="">
+                </a>
+                <div class="footer footer2">
+                  <div class="footer_title text-center py-4 mx-auto">
+                    <span>Lexus RC 3500</span>
+                  </div>
+                  <ul class="b-goods-f__list ul_custom list-unstyled text-center py-1">
+                    <li class="b-goods-f__list-item s">
+                      <span> 35,000km</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> 2019</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> Manual</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> Petrol</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> 160hp</span>
+                    </li>
+                  </ul>
+                  <div class="dollar text-center pb-4">$26,080</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6">
+            <div class="display">
+              <div class="all_image">
+                <a href="#">
+                  <img class="img-scale" src="./images/5.jpg" alt="">
+                </a>
+                <div class="footer footer2">
+                  <div class="footer_title text-center py-4 mx-auto">
+                    <span>Mercedes SX</span>
+                  </div>
+                  <ul class="b-goods-f__list ul_custom list-unstyled text-center py-1">
+                    <li class="b-goods-f__list-item s">
+                      <span> 35,000km</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> 2019</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> Manual</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> Petrol</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> 160hp</span>
+                    </li>
+                  </ul>
+                  <div class="dollar text-center pb-4">$66,500</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6">
+            <div class="display">
+              <div class="all_image">
+                <a href="#">
+                  <img class="img-scale" src="./images/6.jpg" alt="">
+                </a>
+                <div class="footer footer2">
+                  <div class="footer_title text-center py-4 mx-auto">
+                    <span>Porsche 911 Targa</span>
+                  </div>
+                  <ul class="b-goods-f__list ul_custom list-unstyled text-center py-1">
+                    <li class="b-goods-f__list-item s">
+                      <span> 35,000km</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> 2019</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> Manual</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> Petrol</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> 160hp</span>
+                    </li>
+                  </ul>
+                  <div class="dollar text-center pb-4">$35,700</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- section end cards -->
+    <!-- section numbers start -->
+    <div class="numbers_section">
+      <div class="container" style="max-width: 1170px;">
+        <div class="row">
+          <div class="col-12 text-center">
+            <div class="w-content">HELPS YOU TO FIND PERFECT CAR</div>
+            <h2 class="w-title mt-0">How Revus <span class="w-primary"> Works</span>
+            </h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-3 col-sm-12 col-md-12">
+            <div class="content_whole text-center">
+              <span class="number_label">01</span>
+              <div class="header_line">
+                <span>Search Our Inventory</span>
+              </div>
+              <div class="para_content pt-3">
+                <p>Magna aliqua enim aduas dui veniam quis nostrud exercitation ullam laboris aut aliquip ex consequat.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-sm-12 col-md-12">
+            <div class="content_whole text-center">
+              <span class="number_label">02</span>
+              <div class="header_line">
+                <span>Choose The Car You Like</span>
+              </div>
+              <div class="para_content pt-3">
+                <p>Magna aliqua enim aduas dui veniam quis nostrud exercitation ullam laboris aut aliquip ex consequat.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-sm-12 col-md-12">
+            <div class="content_whole text-center">
+              <span class="number_label">03</span>
+              <div class="header_line">
+                <span>Apply For Auto Finance</span>
+              </div>
+              <div class="para_content pt-3">
+                <p>Magna aliqua enim aduas dui veniam quis nostrud exercitation ullam laboris aut aliquip ex consequat.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-sm-12 col-md-12">
+            <div class="content_whole text-center">
+              <span class="number_label">04</span>
+              <div class="header_line">
+                <span>Get Approved & Drive</span>
+              </div>
+              <div class="para_content ppp pt-3">
+                <p>Magna aliqua enim aduas dui veniam quis nostrud exercitation ullam laboris aut aliquip ex consequat.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- section numbers end -->
+    <!-- section car display -->
+    <div class="car_display">
+      <div class="container" style="max-width: 1170px;">
+        <div class="row">
+          <div class="col-lg-12 text-center car_image">
+            <img class="img-fluid" src="./images/1.png" alt="">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-6">
+            <div class="bg_image image1">
+              <h2 class="b-bnr-2__title">Are you looking to <br>buy a new car? </h2>
+              <a class="b-bnr-2__link" href="#">Start searching our inventory that includes 2000+ cars</a>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <div class="bg_image image2">
+              <h2 class="b-bnr-2__title">Are you looking to <br>buy a new car? </h2>
+              <a class="b-bnr-2__link" href="#">Add your vehicle to inventory &amp; reach 3k potential buyers</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- section car display end -->
+    <!-- section slide_images start -->
+    <div class="slide_images">
+      <div class="row mx-auto">
+        <div class="col-xl-4 mx-0 px-0">
+          <a href="#" class="slide_image1 same">
+            <div class="abc_main">
+              <span class="b-goods-f__label bg-primary">NEW</span>
+              <div class="abc_title pt-2">AUDI Q2L (2019)</div>
+              <div class="abc_subtitle">LUXURY APART - </div>
+              <span class="rs ms-0">$499/M</span>
+              <ul class="b-goods-vip__list pt-3 list-unstyled">
+                <li class="b-goods-vip__list-item">Manual</li>
+                <li class="b-goods-vip__list-item">2019</li>
+                <li class="b-goods-vip__list-item">Petrol</li>
+                <li class="b-goods-vip__list-item">661 hp</li>
+              </ul>
+            </div>
+          </a>
+        </div>
+        <div class="col-xl-4 mx-0 px-0">
+          <a href="#" class="slide_image2 same">
+            <div class="abxy">
+              <span class="b-goods-f__label f bg-primary">As Low As <strong>1.5% APR</strong></span>
+              <div class="abc_subtitle pt-3 pb-0 mb-0">Off-Road King</div>
+              <div class="abc_title">Jaguar I PACE</div>
+              <div class="slogan">Limited Time Offer </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-xl-4 mx-0 px-0">
+          <a href="#" class="slide_image3 same">
+            <div class="abxy z">
+              <div class="abc_subtitle pt-3 pb-0 mb-0">2019 Models</div>
+              <div class="abc_title d-lg-block">All Brands Cars
+                <span class="b-goods-f__label bg-primary ms-3 b-goods-vip__label-3">More Power</span>
+              </div>
+              <div class="slogan text-center">PREMIUM LUXURY </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- section slide_images end -->
+    <!-- team section start -->
+    <div class="team_section car_display">
+      <div class="container" style="max-width: 1170px;">
+        <div class="row">
+          <div class="col-12 text-center">
+            <div class="w-content">HELPS YOU TO FIND PERFECT CAR</div>
+            <h2 class="w-title mt-0">Our Sales <span class="w-primary"> Team</span>
+            </h2>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-lg-3 col-md-6">
+            <div class="card_whole">
+              <div class="team_image">
+                <img src="./images/1 (3).jpg" alt="">
+              </div>
+              <ul class="b-team__soc list-unstyled">
+                <li class="b-team__soc-item">
+                  <a class="b-team__soc-link" href="#">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                </li>
+                <li class="b-team__soc-item">
+                  <a class="b-team__soc-link" href="#">
+                    <i class="bi bi-twitter"></i>
+                  </a>
+                </li>
+                <li class="b-team__soc-item">
+                  <a class="b-team__soc-link" href="#">
+                    <i class="bi bi-google"></i>
+                  </a>
+                </li>
+            </ul>
+              <div class="team_footer">
+                <div class="name">Alex Leeman</div>
+                <div class="sub_name">Director</div>
+              </div>
+              <div class="b-team__footer text-center pb-4">
+                <a class="b-team__phone" href="tel:+17553028549">
+                  <i class="bi bi-telephone-inbound" style="color: #d01818;"></i> +1 755 302 8549
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="card_whole">
+              <div class="team_image">
+                <img src="./images/2 (2).jpg" alt="">
+              </div>
+              <ul class="b-team__soc list-unstyled">
+                <li class="b-team__soc-item">
+                  <a class="b-team__soc-link" href="#">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                </li>
+                <li class="b-team__soc-item">
+                  <a class="b-team__soc-link" href="#">
+                    <i class="bi bi-twitter"></i>
+                  </a>
+                </li>
+                <li class="b-team__soc-item">
+                  <a class="b-team__soc-link" href="#">
+                    <i class="bi bi-google"></i>
+                  </a>
+                </li>
+            </ul>
+              <div class="team_footer">
+                <div class="name">Diago Johnson</div>
+                <div class="sub_name">Sales Manager</div>
+              </div>
+              <div class="b-team__footer text-center pb-4">
+                <a class="b-team__phone" href="tel:+17553028549">
+                  <i class="bi bi-telephone-inbound" style="color: #d01818;"></i> +1 755 302 8549
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="card_whole">
+              <div class="team_image">
+                <img src="./images/3 (2).jpg" alt="">
+              </div>
+              <ul class="b-team__soc list-unstyled">
+                <li class="b-team__soc-item">
+                  <a class="b-team__soc-link" href="#">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                </li>
+                <li class="b-team__soc-item">
+                  <a class="b-team__soc-link" href="#">
+                    <i class="bi bi-twitter"></i>
+                  </a>
+                </li>
+                <li class="b-team__soc-item">
+                  <a class="b-team__soc-link" href="#">
+                    <i class="bi bi-google"></i>
+                  </a>
+                </li>
+            </ul>
+              <div class="team_footer">
+                <div class="name">Sophia Lauren</div>
+                <div class="sub_name">Co-Founder</div>
+              </div> 
+              <div class="b-team__footer  text-center pb-4">
+                <a class="b-team__phone" href="tel:+17553028549">
+                  <i class="bi bi-telephone-inbound" style="color: #d01818;"></i> +1 755 302 8549
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="card_whole">
+              <div class="team_image">
+                <img src="./images/4 (2).jpg" alt="">
+              </div>
+              <ul class="b-team__soc list-unstyled">
+                <li class="b-team__soc-item">
+                  <a class="b-team__soc-link" href="#">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                </li>
+                <li class="b-team__soc-item">
+                  <a class="b-team__soc-link" href="#">
+                    <i class="bi bi-twitter"></i>
+                  </a>
+                </li>
+                <li class="b-team__soc-item">
+                  <a class="b-team__soc-link" href="#">
+                    <i class="bi bi-google"></i>
+                  </a>
+                </li>
+            </ul>
+              <div class="team_footer">
+                <div class="name">William Henry</div>
+                <div class="sub_name">Marketing</div>
+              </div>
+              <div class="b-team__footer text-center pb-4">
+                <a class="b-team__phone" href="tel:+17553028549">
+                  <i class="bi bi-telephone-inbound" style="color: #d01818;"></i> +1 755 302 8549
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- team section end -->
+
+    <!-- transparent start -->
+    <section class="section-reviews section-default area-bg ">
+      <div class="area-bg__inner">
+          <div class="container-fluid">
+              <div class="row">
+                  <div class="col-12">
+                    <div class="col-12 text-center everything">
+                      <div class="w-content">HELPS YOU TO FIND PERFECT CAR</div>
+                      <h2 class="w-title mt-0" style="color: #fff;">Customer Reviews</h2>
+                      <span class="section-reviews__decor">“</span>
+                    </div>
+                  </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="both">
+                  <div class="col-sm-12 col-md-6">
+                    <div class="b-reviews" style="width: 100%; display: inline-block;">
+                    <blockquote class="b-reviews__blockquote">
+                        <div class="b-reviews__wrap">
+                            <p>Norem ipsum dolor sit amet consectetur adipisicing elit aliqua uat enim ad minim veniam, quis nostrud exercita Duis aute irure dolor reprehenderit. Slyly babbled much partook this much in in thus the sauc.</p>
+                        </div>
+                        <cite class="b-reviews__cite" title="Blockquote Title">
+                          <span class="b-reviews__inner">
+                            <span class="b-reviews__name">Tina Olivia</span>
+                          <span class="b-reviews__category">Customer</span>
+                        </span>
+                        <span class="b-reviews__author">
+                          <img class="img-fluid" src="./images/face-1.jpg" alt="foto">
+                        </span>
+                      </cite>
+                   </blockquote>
+                </div>
+              </div>
+              <div><div class="b-reviews" style="width: 100%; display: inline-block;">
+                <blockquote class="b-reviews__blockquote">
+                    <div class="b-reviews__wrap">
+                        <p>Norem ipsum dolor sit amet consectetur adipisicing elit aliqua. Ut enim ad minim veniam, quis nostrud exercita Duis aute irure dolor reprehenderit.</p>
+                    </div>
+                    <cite class="b-reviews__cite" title="Blockquote Title"><span class="b-reviews__inner"><span class="b-reviews__name">Alexa Cathy</span><span class="b-reviews__category">Customer</span></span><span class="b-reviews__author"><img class="img-fluid" src="./images/face-2.jpg" alt="foto"></span></cite>
+                </blockquote>
+            </div></div>
+                </div>
+              </div>
+              </div>
+          </div>
+      </div>
+  </section>
+    <!-- transparent end -->
+
+    <!-- second_last start -->
+    <div class="team_section second_last">
+      <div class="container" style="max-width: 1170px;">
+        <div class="row">
+          <div class="col-12 text-center">
+            <div class="w-content">HELPS YOU TO FIND PERFECT CAR</div>
+            <h2 class="w-title mt-0">News & <span class="w-primary"> Articles</span>
+            </h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card_body_whole">
+              <div class="half_image mb-4">
+                <img class="img-fluid" src="./images/1 (4).jpg" alt="">
+              </div>
+              <div class="body_content">
+                <div class="body_header">
+                  <div class="body_header_head pb-2">
+                    <span class="entry-meta__item">
+                      <a class="entry-meta__link" href="blog-main.html">25 DEC 2018</a>
+                    </span>
+                    <span class="entry-meta__item">
+                      <a class="entry-meta__link" href="blog-main.html">BY ADMIN</a>
+                    </span>
+                  </div>
+                  <h2 class="entry-title">Top 10 most Fuel-Efficient cars on the roads</h2>
+                </div>
+                <div class="entry-content">
+                  <p>Edipisicing eiusmod tempor incididunt labore dolore magna aliqa ust enim ad minim veniams quis nostrud citation ullam co laboris nisi ut aliquip.</p>
+              </div>
+              <div class="entry-footer">
+                <a class="entry-link btn-link" href="#">READ article</a>
+                <span class="entry-views">
+                  <i class="bi bi-chat-left-text pe-1"></i> 52
+                </span>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card_body_whole">
+              <div class="half_image mb-4">
+                <img class="img-fluid" src="./images/2 (3).jpg" alt="">
+              </div>
+              <div class="body_content">
+                <div class="body_header">
+                  <div class="body_header_head pb-2">
+                    <span class="entry-meta__item">
+                      <a class="entry-meta__link" href="blog-main.html">25 DEC 2018</a>
+                    </span>
+                    <span class="entry-meta__item">
+                      <a class="entry-meta__link" href="blog-main.html">BY ADMIN</a>
+                    </span>
+                  </div>
+                  <h2 class="entry-title">How to increase Auto Sales: A Dealers’ Guide</h2>
+                </div>
+                <div class="entry-content">
+                  <p>Edipisicing eiusmod tempor incididunt labore dolore magna aliqa ust enim ad minim veniams quis nostrud citation ullam co laboris nisi ut aliquip.</p>
+              </div>
+              <div class="entry-footer">
+                <a class="entry-link btn-link" href="#">READ article</a>
+                <span class="entry-views">
+                  <i class="bi bi-chat-left-text pe-1"></i> 52
+                </span>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card_body_whole">
+              <div class="half_image mb-4">
+                <img class="img-fluid" src="./images/3 (3).jpg" alt="">
+              </div>
+              <div class="body_content">
+                <div class="body_header">
+                  <div class="body_header_head pb-2">
+                    <span class="entry-meta__item">
+                      <a class="entry-meta__link" href="blog-main.html">25 DEC 2018</a>
+                    </span>
+                    <span class="entry-meta__item">
+                      <a class="entry-meta__link" href="blog-main.html">BY ADMIN</a>
+                    </span>
+                  </div>
+                  <h2 class="entry-title">We have vehicle with safety checks and licensed</h2>
+                </div>
+                <div class="entry-content">
+                  <p>Edipisicing eiusmod tempor incididunt labore dolore magna aliqa ust enim ad minim veniams quis nostrud citation ullam co laboris nisi ut aliquip.</p>
+              </div>
+              <div class="entry-footer">
+                <a class="entry-link btn-link" href="#">READ article</a>
+                <span class="entry-views">
+                  <i class="bi bi-chat-left-text pe-1"></i> 52
+                </span>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- second_last end -->
+
+    <!-- banner start -->
+    <section class="banner">
+      <div class="container" style="max-width: 1170px;">
+          <div class="row">
+              <div class="col-12">
+                  <h2 class="banner__title ui-tilte">Buy Sell Your Car Quickly &amp; Easily with Revus</h2>
+                  <div class="banner__info">Labore dolore magna aliqua minim ipsum sed ipsumveniam quis nostrud exercitation</div>
+                  <a class="banner__btn add_list_btn btn" href="#">GET REGISTERED</a>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- banner end -->
+
+  <!-- slider cars start -->
+  <section class="carousel2 w-100">
+      <!-- <div class="slider2">
+        <div class="owl-carousel2 owl-theme">
+          <div class="item">
+            <a href="#">
+              <img src="./images/2 (4).jpg" alt="">
+            </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <img src="./images/6 (1).jpg" alt="">
+            </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <img src="./images/8.jpg" alt="">
+            </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <img src="./images/1 (5).jpg" alt="">
+            </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <img src="./images/3 (4).jpg" alt="">
+            </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <img src="./images/7.jpg" alt="">
+            </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <img src="./images/5 (1).jpg" alt="">
+            </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <img src="./images/4 (3).jpg" alt="">
+            </a>
+          </div>
+    </div>
+        </div> -->
+  </section>
+  <!-- slider cars end -->
+<div class="row slide-new">
+  <div class="">
+    <div class="slider-new ps-3 mx-0">
+    <div class="owl-carousel owl-theme">
+      <div class="item px-0">
+        <a href="#">
+          <img src="./images/2 (4).jpg" alt="">
+        </a>
+      </div>
+      <div class="item">
+        <a href="#">
+        <img src="./images/6 (1).jpg" alt="">
+        </a>
+      </div>
+      <div class="item">
+        <a href="#">
+          <img src="./images/4 (3).jpg" alt="">
+        </a>
+      </div>
+      <div class="item">
+        <a href="#">
+          <img src="./images/5 (1).jpg" alt="">
+        </a>
+      </div>
+      <div class="item">
+        <a href="#">
+          <img src="./images/7.jpg" alt="">
+        </a>
+      </div>
+      <div class="item">
+        <a href="#">
+          <img src="./images/3 (4).jpg" alt="">
+        </a>
+      </div>
+      <div class="item">
+        <a href="#">
+          <img src="./images/1 (5).jpg" alt="">
+        </a>
+      </div>
+      <div class="item">
+        <a href="#">
+          <img src="./images/8.jpg" alt="">
+        </a>
+      </div>
+      <div class="item px-0">
+        <a href="#">
+          <img src="./images/2 (4).jpg" alt="">
+        </a>
+      </div>
+      <div class="item px-0">
+        <a href="#">
+          <img src="./images/6 (1).jpg" alt="">
+        </a>
+      </div>
+      <div class="item px-0">
+        <a href="#">
+          <img src="./images/4 (3).jpg" alt="">
+        </a>
+      </div>
+  </div>
+</div>
+  </div>
+</div>
+
+  <!-- footer start -->
+  <footer class="footer3">
+    <div class="container" style="max-width: 1170px;">
+      <div class="row mt-5">
+        <div class="col-12 col-sm-12 col-md-12">
+            <div class="text-center">
+                <div class="footer-logo">
+                    <a class="footer-logo__link" href="home.html">
+                      <img class="img-responsive" src="./images/logo-light.png" alt="Logo">
+                    </a>
+                </div>
+                <ul class="footer3 list-unstyled">
+                    <li class="footer__item">
+                      <a class="footer__link" href="#" target="_blank">
+                        <i class="ic fab fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li class="footer__item">
+                      <a class="footer__link" href="#" target="_blank">
+                        <i class="ic fab fa-facebook"></i>
+                      </a>
+                    </li>
+                    <li class="footer__item">
+                      <a class="footer__link" href="#" target="_blank">
+                        <i class="ic fab fa-linkedin"></i>
+                      </a>
+                    </li>
+                    <li class="footer__item">
+                      <a class="footer__link" href="#" target="_blank">
+                        <i class="ic fab fa-google-plus-g"></i>
+                      </a>
+                    </li>
+                    <li class="footer__item">
+                      <a class="footer__link" href="#" target="_blank">
+                        <i class="ic fab fa-pinterest"></i>
+                      </a>
+                    </li>
+                    <li class="footer__item">
+                      <a class="footer__link" href="#" target="_blank">
+                        <i class="ic fas fa-play"></i>
+                      </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="footer_whole">
+          <div class="footer_head pb-3">
+            Ceipisicing elit sed do eiusmod tempor laboe dolore magna aliqa Ut enim ad minim veniam quis nostrud exercitation ullam co laboris nis aliquip comsecd sed ipsum.
+          </div>
+          <div class="footer-contacts">
+            <div class="footer-contacts__item">
+              <i class="bi bi-geo-alt pe-2"></i>Fairview Ave, El Monte, CA 91732
+            </div>
+            <div class="footer-contacts__item">
+              <i class="bi bi-envelope pe-2"></i>
+              <a href="mailto:support@domain.com">support@domain.com</a>
+            </div>
+            <div class="footer-contacts__item">
+              <i class="bi bi-headset pe-2"></i>
+              Phone:<a href="tel:+17553028549"> +1 755 302 8549</a>
+            </div>
+        </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-3">
+        <div class="row">
+            <div class="col-lg-6">
+                <section class="footer-section footer-section_link">
+                    <h3 class="footer-section__title">About Revus</h3>
+                    <ul class="footer-list list-unstyled pt-2">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Inventory</a></li>
+                        <li><a href="#">Parts Shop</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </section>
+            </div>
+            <div class="col-lg-6">
+                <section class="footer-section footer-section_link">
+                    <h3 class="footer-section__title">Customer Links</h3>
+                    <ul class="footer-list list-unstyled pt-2">
+                        <li><a href="#">Latest Cars</a></li>
+                        <li><a href="#">Featured Cars</a></li>
+                        <li><a href="#">Sell Your Car</a></li>
+                        <li><a href="#">Buy a Car</a></li>
+                        <li><a href="#">Reviews</a></li>
+                        <li><a href="#">Latest News</a></li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+      <section class="footer-section footer-section_subscribe">
+          <h3 class="footer-section__title">Subscribe Newsletter</h3>
+          <form class="footer-form">
+              <div class="footer-form__info pt-2 pb-2">Get our weekly newsletter for latest car news exclusive offers and deals and more.</div>
+              <div class="form-group">
+                  <input class="footer-form__input form-control" type="email" placeholder="your email">
+              </div>
+              <button class="btn btn-sm">
+                <a class=" cust add_list_btn btn-sm section-carousel__btn">Subscribe</a>
+              </button>
+          </form>
+      </section>
+  </div>
+    </div>
+      <div class="row text-center pt-5">
+        <div class="col-lg-12">
+              <div class="copyright">
+                  Copyrights (c) 2019 Revus - Auto Dealer Template. All rights reserved.
+                  <a class="copyright__link" href="privacy-policy.html">Privacy Policy</a>
+              </div>
+          </div>
+      </div>
+      <span class="footer__btn-up js-scroll-top">
+        <i class="ic fas fa-angle-up"></i>
+        <img src="./images/go_top.png" alt="go top">
+      </span>
+    </div>
+  </footer>
+  <!-- footer end -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!-- put jquery before owl carousel -->
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- owl carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+      $('.num').each(function() {
+        $(this).prop('Counter', 0).animate({
+          Counter: $(this).text()
+        }, {
+          duration: 4000,
+          easing: 'swing',
+          step: function(now) {
+            $(this).text(Math.ceil(now));
+          }
+        });
+      });
+    </script>
+    <script>
+      $('.owl-carousel').owlCarousel({
+        loop: true,
+        rewind: true,
+        margin: 10,
+        autoplay: false,
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 2,
+            slideBy:3
+          },
+          1000: {
+            items: 3,
+            slideBy: 1
+          }
+        },
+      })
+    </script>
+    <script>
+      // var images = [img1,img2];
+      // var i = 0;
+      // var renew = setInterval(function(){
+      //     if(images.length == i){
+      //         i = 0;
+      //     }
+      //     else {
+      //     document.getElementById("bannerImage").src = images[i]; 
+      //     i++;
+      // }
+      // },10000);
+      // 
+    </script>
+    <script type="text/javascript">
+      function displayNextImage() {
+        x = (x === images.length - 1) ? 0 : x + 1;
+        document.getElementById("img").src = images[x];
+      }
+
+      function displayPreviousImage() {
+        x = (x <= 0) ? images.length - 1 : x - 1;
+        document.getElementById("img").src = images[x];
+      }
+
+      function startTimer() {
+        setInterval(displayNextImage, 4000);
+      }
+      var images = [],
+        x = -1;
+      images[0] = "./images/bg-1.jpg";
+      images[1] = "./images/bg-2.jpg";
+    </script>
+
+<script>
+  var owl = $('.owl-carousel');
+owl.owlCarousel({
+    items:6, 
+  // items change number for slider display on desktop
+  loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+});
+
+
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    slideBy:1,
+    slidesToShow:1,
+    autoplay: true,
+
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+</script>
+
+
+  </body>
+</html>
