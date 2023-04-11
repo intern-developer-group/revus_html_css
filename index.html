@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
     <!-- FONTAWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/brands.min.css">
@@ -32,8 +32,8 @@
     <title>Document</title>
   </head>
   <body onload="startTimer()">
-    <!-- header -->
-    <header class="header navbar-scrolling">
+    <!-- header desktop -->
+    <header class="header navbar-scrolling" id="desktop-navbar">
       <div class="top_header d-none d-xl-block">
         <div class="container">
           <div class="row row1 d-flex justify-content-between align-items-center">
@@ -59,12 +59,12 @@
       <div class="bottom_header">
         <div class="container">
           <div class="row">
-            <div class="col-lg-2 col-auto">
+            <div class="col-lg-2 col-md-3 col-auto">
               <a class="revus_logo" href="index.html">
-                <img src="/revus/images/logo.png" alt="logo">
+                <img src="/images/logo.png" alt="logo" class="pqrst">
               </a>
             </div>
-            <div class="col-lg-2 mt-4">
+            <div class="col-lg-2 col-md-4 mt-4">
               <span class="icon">
                 <i class="bi bi-telephone-inbound"></i>
               </span>
@@ -74,9 +74,9 @@
             </div>
             <div class="col-lg d-none d-lg-block ps-5 ms-5 mt-4">
               <div class="navbar navbar-expand-md justify-content-end ps-5 ms-5" id="nav">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
+                <!-- <button class="navbar-toggler" style="color:red"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon">TEST</span>
+                </button> -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="main-menu navbar-nav">
                     <li class="nav-item item active">
@@ -123,8 +123,68 @@
         </div>
       </div>
     </header>
+
+    <!-- header mobile -->
+    <header class="header navbar-scrolling" id="mobile-navbar">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="/images/logo.png" alt="logo" class="pqrst"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item item active">
+                <a class="nav-link custom_nav" href="home.html">HOME</a>
+              </li>
+              <li class="nav-item item dropdown">
+                <div class="dropdown open">
+                  <a class="btn dropdown-toggle" id="triggerId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> INVENTORY </a>
+                  <div class="dropdown-menu" aria-labelledby="triggerId">
+                    <a class="dropdown-item" href="#">INVENTORY LIST</a>
+                    <a class="dropdown-item" href="#">INVENTORY GRID</a>
+                  </div>
+                </div>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li> -->
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li> -->
+              <li class="nav-item item active">
+                <a class="nav-link custom_nav" href="home.html">ABOUT</a>
+              </li>
+              <li class="nav-item item dropdown">
+                <div class="dropdown open">
+                  <a class="btn dropdown-toggle" id="triggerId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> PAGES </a>
+                  <div class="dropdown-menu" aria-labelledby="triggerId">
+                    <a class="dropdown-item" href="#">TYPOGRAPHY</a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item item dropdown">
+                <div class="dropdown open">
+                  <a class="btn dropdown-toggle" id="triggerId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> NEWS </a>
+                  <div class="dropdown-menu" aria-labelledby="triggerId">
+                    <a class="dropdown-item" href="#">BLOG MAIN</a>
+                    <a class="dropdown-item" href="#">BLOG POST</a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item item active">
+                <a class="nav-link custom_nav" href="home.html">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
     <!-- slider1 -->
-    <div class="main">
+    <div class="main ">
       <div class="slider">
         <div class="background_img1 mt-5">
           <img class="img1" id="img" src="./images/bg-1.jpg" alt="bg1">
@@ -656,14 +716,14 @@
       <div class="container" style="max-width: 1170px;">
         <div class="row custom_row">
           <div class="col-xl-2"></div>
-          <div class="col-md-3 col-xl-2 me-3 cc bg-light">
+          <div class="col-md-2 col-xl-2 me-3 cc bg-light">
             <div class="card__content text-center">
               <span class="title1">VEHICLES STOCK</span>
               <br>
               <span class="num" id="spin">3874</span>
             </div>
           </div>
-          <div class="col-md-3 col-xl-2 me-3 cc bg-light">
+          <div class="col-md-2 col-xl-2 me-3 cc bg-light">
             <div class="card__content text-center">
               <span class="title1">DEALERS SERVED </span>
               <br>
@@ -671,14 +731,14 @@
               <span class="sign">+</span>
             </div>
           </div>
-          <div class="col-md-3 col-xl-2 me-3 cc bg-light">
+          <div class="col-md-2 col-xl-2 me-3 cc bg-light">
             <div class="card__content text-center">
               <span class="title1">HAPPY CUSTOMERS</span>
               <br>
               <span class="num">6403</span>
             </div>
           </div>
-          <div class="col-md-3 col-xl-2 me-3 cc bg-light">
+          <div class="col-md-2 col-xl-2 me-3 cc bg-light">
             <div class="card__content text-center">
               <span class="title1">VEHICLES ON SALE</span>
               <br>
@@ -720,7 +780,399 @@
             </ul>
           </div>
         </div>
-        <div class="row mt-5">
+        <div class="none1">
+          <div class="row mt-5">
+          <div class="col-xl-4 col-lg-4 col-md-6">
+            <div class="display">
+              <div class="all_image">
+                <a href="#">
+                  <img class="img-scale" src="./images/1 (2).jpg" alt="">
+                </a>
+                <div class="footer footer2">
+                  <div class="footer_title text-center py-4 mx-auto">
+                    <span>Jaguar GX 490i</span>
+                  </div>
+                  <ul class="b-goods-f__list ul_custom list-unstyled text-center py-1">
+                    <li class="b-goods-f__list-item s">
+                      <span> 35,000km</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> 2019</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> Manual</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> Petrol</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> 160hp</span>
+                    </li>
+                  </ul>
+                  <div class="dollar text-center pb-4">$30,480</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6">
+            <div class="display">
+              <div class="all_image">
+                <a href="#">
+                  <img class="img-scale" src="./images/2 (1).jpg" alt="">
+                </a>
+                <div class="footer footer2">
+                  <div class="footer_title text-center py-4 mx-auto">
+                    <span class="b-goods-f__label bg-primary">NEW</span>
+                    <span>Volkswagen Tiguan</span>
+                  </div>
+                  <ul class="b-goods-f__list ul_custom list-unstyled text-center py-1">
+                    <li class="b-goods-f__list-item s">
+                      <span> 35,000km</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> 2019</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> Manual</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> Petrol</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> 160hp</span>
+                    </li>
+                  </ul>
+                  <div class="dollar text-center pb-4">$45,800</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6">
+            <div class="display">
+              <div class="all_image">
+                <a href="#">
+                  <img class="img-scale" src="./images/3 (1).jpg" alt="">
+                </a>
+                <div class="footer footer2">
+                  <div class="footer_title text-center py-4 mx-auto">
+                    <span>Tesla Model RX3</span>
+                  </div>
+                  <ul class="b-goods-f__list ul_custom list-unstyled text-center py-1">
+                    <li class="b-goods-f__list-item s">
+                      <span> 35,000km</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> 2019</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> Manual</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> Petrol</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> 160hp</span>
+                    </li>
+                  </ul>
+                  <div class="dollar text-center pb-4">$18,250</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6">
+            <div class="display">
+              <div class="all_image">
+                <a href="#">
+                  <img class="img-scale" src="./images/4 (1).jpg" alt="">
+                </a>
+                <div class="footer footer2">
+                  <div class="footer_title text-center py-4 mx-auto">
+                    <span>Lexus RC 3500</span>
+                  </div>
+                  <ul class="b-goods-f__list ul_custom list-unstyled text-center py-1">
+                    <li class="b-goods-f__list-item s">
+                      <span> 35,000km</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> 2019</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> Manual</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> Petrol</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> 160hp</span>
+                    </li>
+                  </ul>
+                  <div class="dollar text-center pb-4">$26,080</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6">
+            <div class="display">
+              <div class="all_image">
+                <a href="#">
+                  <img class="img-scale" src="./images/5.jpg" alt="">
+                </a>
+                <div class="footer footer2">
+                  <div class="footer_title text-center py-4 mx-auto">
+                    <span>Mercedes SX</span>
+                  </div>
+                  <ul class="b-goods-f__list ul_custom list-unstyled text-center py-1">
+                    <li class="b-goods-f__list-item s">
+                      <span> 35,000km</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> 2019</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> Manual</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> Petrol</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> 160hp</span>
+                    </li>
+                  </ul>
+                  <div class="dollar text-center pb-4">$66,500</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6">
+            <div class="display">
+              <div class="all_image">
+                <a href="#">
+                  <img class="img-scale" src="./images/6.jpg" alt="">
+                </a>
+                <div class="footer footer2">
+                  <div class="footer_title text-center py-4 mx-auto">
+                    <span>Porsche 911 Targa</span>
+                  </div>
+                  <ul class="b-goods-f__list ul_custom list-unstyled text-center py-1">
+                    <li class="b-goods-f__list-item s">
+                      <span> 35,000km</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> 2019</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> Manual</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> Petrol</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> 160hp</span>
+                    </li>
+                  </ul>
+                  <div class="dollar text-center pb-4">$35,700</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div></div>
+        <!-- <div class="row mt-5">
+          <div class="col-xl-4 col-lg-4 col-md-6">
+            <div class="display">
+              <div class="all_image">
+                <a href="#">
+                  <img class="img-scale" src="./images/1 (2).jpg" alt="">
+                </a>
+                <div class="footer footer2">
+                  <div class="footer_title text-center py-4 mx-auto">
+                    <span>Jaguar GX 490i</span>
+                  </div>
+                  <ul class="b-goods-f__list ul_custom list-unstyled text-center py-1">
+                    <li class="b-goods-f__list-item s">
+                      <span> 35,000km</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> 2019</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> Manual</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> Petrol</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> 160hp</span>
+                    </li>
+                  </ul>
+                  <div class="dollar text-center pb-4">$30,480</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6">
+            <div class="display">
+              <div class="all_image">
+                <a href="#">
+                  <img class="img-scale" src="./images/2 (1).jpg" alt="">
+                </a>
+                <div class="footer footer2">
+                  <div class="footer_title text-center py-4 mx-auto">
+                    <span class="b-goods-f__label bg-primary">NEW</span>
+                    <span>Volkswagen Tiguan</span>
+                  </div>
+                  <ul class="b-goods-f__list ul_custom list-unstyled text-center py-1">
+                    <li class="b-goods-f__list-item s">
+                      <span> 35,000km</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> 2019</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> Manual</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> Petrol</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> 160hp</span>
+                    </li>
+                  </ul>
+                  <div class="dollar text-center pb-4">$45,800</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6">
+            <div class="display">
+              <div class="all_image">
+                <a href="#">
+                  <img class="img-scale" src="./images/3 (1).jpg" alt="">
+                </a>
+                <div class="footer footer2">
+                  <div class="footer_title text-center py-4 mx-auto">
+                    <span>Tesla Model RX3</span>
+                  </div>
+                  <ul class="b-goods-f__list ul_custom list-unstyled text-center py-1">
+                    <li class="b-goods-f__list-item s">
+                      <span> 35,000km</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> 2019</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> Manual</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> Petrol</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> 160hp</span>
+                    </li>
+                  </ul>
+                  <div class="dollar text-center pb-4">$18,250</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6">
+            <div class="display">
+              <div class="all_image">
+                <a href="#">
+                  <img class="img-scale" src="./images/4 (1).jpg" alt="">
+                </a>
+                <div class="footer footer2">
+                  <div class="footer_title text-center py-4 mx-auto">
+                    <span>Lexus RC 3500</span>
+                  </div>
+                  <ul class="b-goods-f__list ul_custom list-unstyled text-center py-1">
+                    <li class="b-goods-f__list-item s">
+                      <span> 35,000km</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> 2019</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> Manual</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> Petrol</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> 160hp</span>
+                    </li>
+                  </ul>
+                  <div class="dollar text-center pb-4">$26,080</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6">
+            <div class="display">
+              <div class="all_image">
+                <a href="#">
+                  <img class="img-scale" src="./images/5.jpg" alt="">
+                </a>
+                <div class="footer footer2">
+                  <div class="footer_title text-center py-4 mx-auto">
+                    <span>Mercedes SX</span>
+                  </div>
+                  <ul class="b-goods-f__list ul_custom list-unstyled text-center py-1">
+                    <li class="b-goods-f__list-item s">
+                      <span> 35,000km</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> 2019</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> Manual</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> Petrol</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> 160hp</span>
+                    </li>
+                  </ul>
+                  <div class="dollar text-center pb-4">$66,500</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6">
+            <div class="display">
+              <div class="all_image">
+                <a href="#">
+                  <img class="img-scale" src="./images/6.jpg" alt="">
+                </a>
+                <div class="footer footer2">
+                  <div class="footer_title text-center py-4 mx-auto">
+                    <span>Porsche 911 Targa</span>
+                  </div>
+                  <ul class="b-goods-f__list ul_custom list-unstyled text-center py-1">
+                    <li class="b-goods-f__list-item s">
+                      <span> 35,000km</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> 2019</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> Manual</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> Petrol</span>
+                    </li>
+                    <li class="b-goods-f__list-item s">
+                      <span> 160hp</span>
+                    </li>
+                  </ul>
+                  <div class="dollar text-center pb-4">$35,700</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <div class="none">
+          <div class="row mt-5">
           <div class="col-xl-4 col-lg-4 col-md-6">
             <div class="display">
               <div class="all_image">
@@ -917,6 +1369,8 @@
             </div>
           </div>
         </div>
+      </div>
+        
       </div>
     </div>
     <!-- section end cards -->
@@ -1521,7 +1975,7 @@
         </div>
     </div>
     <div class="row">
-      <div class="col-lg-4">
+      <div class="col-lg-4 col-sm-5">
         <div class="footer_whole">
           <div class="footer_head pb-3">
             Ceipisicing elit sed do eiusmod tempor laboe dolore magna aliqa Ut enim ad minim veniam quis nostrud exercitation ullam co laboris nis aliquip comsecd sed ipsum.
@@ -1602,7 +2056,7 @@
   </footer>
   <!-- footer end -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script> -->
     <!-- put jquery before owl carousel -->
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -1720,6 +2174,6 @@ $('.owl-carousel').owlCarousel({
 })
 </script>
 
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
 </html>

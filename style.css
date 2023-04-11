@@ -156,6 +156,12 @@ ul li a:hover {
 	text-decoration: none;
 }
 
+.show{
+	z-index: 2;
+    background: white;
+}
+
+
 /* header end */
 
 /* main */
@@ -164,6 +170,7 @@ ul li a:hover {
 	/* position: relative; */
 	margin: 130px auto 0px auto;
 	overflow: hidden;
+	z-index: 0;
 }
 
 .slider {
@@ -1700,7 +1707,27 @@ ul li a:hover {
 }
 /* footer end */
 
+.navbar {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    float: right;
+    width: 50%;
+    padding-left: 10px;
+	padding-top: 20px;
+}
 
+.navbar-dark .navbar-toggler {
+    background-color: black;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    color: black;
+}
 /* //////////////////////////////////////////// */
 
 /* mobile responsive */
@@ -1710,6 +1737,9 @@ ul li a:hover {
 @media only screen and (max-width: 425px) {
 	.footer3{
 		max-width: 100%;
+	}
+	#mobile-navbar .navbar {
+		display: contents;
 	}
 }
 /* footer3 end */
@@ -1899,8 +1929,124 @@ ul li a:hover {
 		width: 100%;
 		margin-left: 0;
 	}
+
+	.heading .title{
+		font-size: 25px;
+		margin-right: 115px;
+	}
+
+	.heading .sub-title{
+		font-size: 25px !important;
+		display: inline-block;
+		padding-left: 5px;
+	
+	}
+	.heading .sub_title{
+		font-size: 28px;
+    	margin-top: -37px;
+	}
+	.rs{
+		color: white;
+   		padding: 20px;
+	}
+	.slider-line{
+		display: none;
+	}
+	.learn{
+		display: none;
+	}
+	.bottom_header .col-lg-2 .icon{
+		visibility: hidden;
+	}
+	.revus_logo .pqrst{
+		padding: 30px;
+	}
+	.main{
+		margin-top: 30px;
+		height: 390px;
+	}
+	.shape{
+		clip-path: none;
+		padding: 65px 10px 0;
+		width: 100%;
+		margin-left: 0;
+		text-align: center;
+	}
+	
 }
 
+@media (min-width: 768px) and (max-width: 800px) {
+	.para_content::after{
+		border: none;
+		width: 0;
+	}
+	.none{
+		display: none;
+	}
+	.none1{
+		display: block;
+	}
+	.number_label::after {
+		top: calc(50% - 40px);
+		left: calc(50% - 5px);
+	}
+
+	.number_label::before {
+		top: calc(50% - 45px);
+		left: calc(50% - 10px);
+	}
+
+	.abxy{
+		position: relative;
+		padding: 20px;
+	}
+
+	.bg-img3{
+		height: 100%;
+	}
+
+	.custom_row{
+		padding-left: 10px;
+	}
+
+	.cc{
+		width: 24%;
+		margin-right: 5px !important;
+	}
+
+	.revus_logo img{
+		padding: 50px;
+		margin-top: 0 !important;
+	}
+
+	.align{
+		width: 100%;
+		margin-left: 5px;
+	}
+
+	.tab-content{
+		width: 100%;
+		margin-left: 5px;
+	}
+
+	.tab-list .tab_label_number {
+		padding-right: 94px;
+	}
+
+	.navbar{
+		width: 100vw;
+		height: 187px;
+	}
+}
+
+@media (min-width: 800px) {
+	.none{
+		display: block;
+	}
+	.none1{
+		display: none;
+	}
+}
 @media (max-width: 991px){
 
 	.b-services-nav {
@@ -1927,16 +2073,16 @@ ul li a:hover {
 		width: 100%;
 	}
 
-	.shape{
-		clip-path: none;
-		padding: 65px 10px 0;
-		width: 100%;
-		margin-left: 0;
-		text-align: center;
-	}
-
 	.top-line{
 		font-size: 15px;
+	}
+
+	#mobile-navbar{
+		display: block;
+	}
+
+	#desktop-nabar{
+		display: none;
 	}
 
 }
@@ -1962,4 +2108,14 @@ ul li a:hover {
 	.banner {
     background-image: none;
 	}
+}
+
+@media (min-width: 1199px){
+
+#mobile-navbar{
+	display: none;
+}
+
+#desktop-nabar{
+	display: block;
 }
