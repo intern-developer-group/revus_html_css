@@ -40,7 +40,38 @@ function validateForm() {
     
   }
   
+  function validateForm2() {
+    const name = document.getElementById("companyname").value.trim();
+    const lname = document.getElementById("carname").value.trim();
+    const email = document.getElementById("modelname").value.trim();
+    const phone = document.getElementById("fuelname").value.trim();
+  
+    if (companyname === "") {
+      alert("Please enter company name.");
+      return false;
+    }
+  
+    
+    if (carname === "") {
+        alert("Please enter car name.");
+        return false;
+      }
+    
 
+    if (modelname === "") {
+        alert("Please enter car name.");
+        return false;
+      }
+
+    if (fuelname === "") {
+        alert("Please enter fuel type.");
+        return false;
+      }
+
+    form2();
+    
+  }
+  
 
 
   function isValidEmail(email) {
