@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style3.css" />
+    <script src="script.js" defer></script>
+    <title>Registraion Form</title>
+</head>
+
+<body>
+    <form action="#" class="form">
+
+        <!-- Steps -->
+        <div class="form-step form-step-active" id="form1">
+            <h1 class="text-center">Registration Form</h1>
+            <div class="input-group">
+                <label for="username">First Name</label>
+                <input type="text" name="username" id="username" pattern="[a-zA-Z]{5,}" title="Minimum 5 letters"
+                    required />
+            </div>
+            <div class="input-group">
+                <label for="position">Last Name</label>
+                <input type="text" name="lname" id="lname" pattern="[a-zA-Z]{5,}" title="Minimum 5 letters" required />
+            </div>
+            <div class="input-group">
+                <label for="phone">Phone</label>
+                <input type="text" name="phone" id="phone" pattern="[0-9]{10}" title="Enter 10 numbers" required />
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required />
+            </div>
+            <div class="">
+                <button type="button" class="btn btn-next width-50 ml-auto" onclick="validateForm()">Next</button>
+                <!-- <a href="#" class="btn btn-next width-50 ml-auto" onclick="validate();">Next</a> -->
+            </div>
+        </div>
+
+        <!-- form 2 -->
+        <div class="form-step" id="form2">
+            <h1 class="text-center">Book Now</h1>
+            <div class="input-group">
+                <label for="username">Company Name</label>
+                <input type="text" name="companyname" id="companyname" />
+            </div>
+            <div class="input-group">
+                <label for="username">Car Name</label>
+                <input type="text" name="carname" id="carname" />
+            </div>
+            <div class="input-group">
+                <label for="username">Model Name</label>
+                <input type="text" name="modelname" id="modelname" />
+            </div>
+            <div class="input-group">
+                <label for="username">Fuel Type</label>
+                <input type="text" name="fuelname" id="fuelname" />
+            </div>
+            <div class="btns-group">
+                <button onclick="previous1()">Previous</button>
+                <button onclick="form2()">Next</button>
+            </div>
+        </div>
+        <!-- form 3 -->
+        <div class="form-step" id="form3">
+            <h1 class="text-center">Book Now</h1>
+            <div class="input-group">
+                <label for="dob">Car Color</label>
+                <input type="text" name="ccolor" id="ccolor" />
+            </div>
+            <div class="input-group">
+                <label for="ID">Booking Date</label>
+                <input type="date" name="dte" id="dte" />
+            </div>
+            <div class="btns-group">
+
+                <button onclick="previous2()">Previous</button>
+                <button type="submit">Submit</button>
+            </div>
+    </form>
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+        integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"></script>
+</body>
+
+</html>

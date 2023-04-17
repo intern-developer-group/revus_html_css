@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <!-- BOOTSTRAP ICONS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;800&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <!-- carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+body {
+  background: #eee;
+}
+#regForm {
+  background-color: #ffffff;
+  margin: 0px auto;
+  font-family: Raleway;
+  padding: 40px;
+  border-radius: 10px;
+}
+h1 {
+  text-align: center;
+}
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+}
+input.invalid {
+  background-color: #ffdddd;
+}
+.tab {
+  display: none;
+}
+button {
+  background-color: #4caf50;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-family: Raleway;
+  cursor: pointer;
+}
+button:hover {
+  opacity: 0.8;
+}
+#prevBtn {
+  background-color: #bbbbbb;
+}
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+.step.active {
+  opacity: 1;
+}
+.step.finish {
+  background-color: #4caf50;
+}
+.all-steps {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.thanks-message {
+  display: none;
+}
+
+</style>
+<>
+
+  <div class="container mt-5">
+    <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-md-6">
+            <form id="regForm">
+                <h1 id="register"></h1>
+                <div class="all-steps" id="all-steps"> 
+                  <span class="step"></span> 
+                  <span class="step"></span> 
+                  <span class="step"></span> 
+                  <span class="step"></span> 
+                </div>
+                <div class="tab">
+                    <p><input placeholder="First name..." oninput="this.className = ''" name="fname"></p>
+                    <p><input placeholder="Last name..." oninput="this.className = ''" name="lname"></p>
+                </div>
+                <div class="tab">
+                    <p><input placeholder="City" oninput="this.className = ''" name="dd"></p>
+                    <p><input placeholder="State" oninput="this.className = ''" name="nn"></p>
+                </div>
+                <div class="tab">
+                    <p><input placeholder="E-mail..." oninput="this.className = ''" name="email"></p>
+                    <p><input placeholder="Phone..." oninput="this.className = ''" name="phone"></p>
+                </div>
+                <div class="tab">
+                    <p><input placeholder="Username..." oninput="this.className = ''" name="uname"></p>
+                    <p><input placeholder="Password..." oninput="this.className = ''" name="pword" type="password"></p>
+                </div>
+                <div class="thanks-message text-center" id="text-message"> <img src="https://i.imgur.com/O18mJ1K.png" width="100" class="mb-4">
+                    <h3>Thanks for your information!</h3> <span>Your information has been saved! we will contact you shortly!</span>
+                </div>
+                <div style="overflow:auto;" id="nextprevious">
+                    <div style="float:right;"> <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button> <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button> </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <!------ Include the above in your HEAD tag ---------->
+  
+
+
+
+  <script>
+  $(document).ready(function(){
+
+    $.validator.addMethod("usernameRegex", function(value, element) {
+      return this.optional(element) || /^[a-zA-Z0-9]*$/i.test(value);
+    }, "Username must contain only letters, numbers");
+
+    $(".next").click(function(){
+      var form = $("#myform");
+      form.validate({
+        errorElement: 'span',
+        errorClass: 'help-block',
+        highlight: function(element, errorClass, validClass) {
+          $(element).closest('.form-group').addClass("has-error");
+        },
+        unhighlight: function(element, errorClass, validClass) {
+          $(element).closest('.form-group').removeClass("has-error");
+        },
+        rules: {
+          username: {
+            required: true,
+            usernameRegex: true,
+            minlength: 6,
+          },
+          password : {
+            required: true,
+          },
+          conf_password : {
+            required: true,
+            equalTo: '#password',
+          },
+          company:{
+            required: true,
+          },
+          url:{
+            required: true,
+          },
+          name: {
+            required: true,
+            minlength: 3,
+          },
+          email: {
+            required: true,
+            minlength: 3,
+          },
+          
+        },
+        messages: {
+          username: {
+            required: "Username required",
+          },
+          password : {
+            required: "Password required",
+          },
+          conf_password : {
+            required: "Password required",
+            equalTo: "Password don't match",
+          },
+          name: {
+            required: "Name required",
+          },
+          email: {
+            required: "Email required",
+          },
+        }
+      });
+      if (form.valid() === true){
+        if ($('#account_information').is(":visible")){
+          current_fs = $('#account_information');
+          next_fs = $('#company_information');
+        }else if($('#company_information').is(":visible")){
+          current_fs = $('#company_information');
+          next_fs = $('#personal_information');
+        }
+        
+        next_fs.show(); 
+        current_fs.hide();
+      }
+    });
+
+    $('#previous').click(function(){
+      if($('#company_information').is(":visible")){
+        current_fs = $('#company_information');
+        next_fs = $('#account_information');
+      }else if ($('#personal_information').is(":visible")){
+        current_fs = $('#personal_information');
+        next_fs = $('#company_information');
+      }
+      next_fs.show(); 
+      current_fs.hide();
+    });
+          
+  //@naresh action dynamic childs
+  var next_exp = 0;
+  $("#add-more1").click(function(e){
+      e.preventDefault();
+      var addto = "#fielda" + next_exp;
+      var addRemove = "#fielda" + (next_exp);
+      next_exp = next_exp + 1;
+      var newInp = ' <div id="fielda'+ next_exp +'" name="field1'+ next_exp +'"><div class="form-group"><label class="col-md-3">Job Title</label><div class="col-md-7"><input type="text"  name="job_tit[]" id="job_tit" class="form-control" placeholder="e.g. Java/php Developer" required> </div><br><br><br><!-- Text input--><div class="form-group"><label class="col-md-3">Company</label><div class="col-md-7"><input type="text"  name="company[]" id="company" class="form-control" placeholder="" required> </div> <div><br><br><!-- Text input--><div class="form-group"><label class="col-md-3">City</label> <div class="col-md-7"><input type="text"  name="city[]" id="city" class="form-control" placeholder="" required></div></div><br><br><!-- Text input--><div class="form-group"><label class="col-md-3">Time period</label><div class="col-md-8"><div class="col-md-3"><select class="form-control"  name="work_from[]" ><option value="1995">    1995	</option><option value="1996">	1996	</option><option value="1997">	1997	</option><option value="1998">	1998	</option><option value="1999">	1999	</option><option value="2000">	2000	</option><option value="2001">	2001	</option><option value="2002">	2002	</option><option value="2003">	2003	</option><option value="2004">	2004	</option><option value="2005">	2005	</option><option value="2006">	2006	</option><option value="2007">	2007	</option><option value="2008">	2008	</option><option value="2009">	2009	</option><option value="2010">	2010	</option><option value="2011">	2011	</option><option value="2012">	2012	</option><option value="2013">	2013	</option><option value="2014">	2014	</option><option value="2015">	2015	</option><option value="2016">	2016	</option></select></div><div class="col-md-1"><label>To</label></div><div class="col-md-3"><select class="form-control"  name="work_to[]" ><option value="1980">	1980	</option><option value="2000">	2000	</option><option value="2001">	2001	</option><option value="2002">	2002	</option><option value="2003">	2003	</option><option value="2004">	2004	</option><option value="2005">	2005	</option><option value="2006">	2006	</option><option value="2007">	2007	</option><option value="2008">	2008	</option><option value="2009">	2009	</option><option value="2010">	2010	</option><option value="2011">	2011	</option><option value="2012">	2012	</option><option value="2013">	2013	</option><option value="2014">	2014	</option><option value="2015">	2015	</option><option value="2016">	2016	</option><option value="2017">	2017	</option><option value="2018">	2018	</option><option value="2019">	2019	</option><option value="2020">	2020	</option></select></div></div></div><br><br><div class="form-group"><input type="checkbox" name="cur_work[]" value="cur_work"> I currently work here<br></div><br><hr></div>';
+      var newInput = $(newInp);
+
+      var removeBtn = '<button id="remove' + (next_exp - 1) + '" class="btn btn-danger remove-me" >Remove</button></div></div><div id="field"><br>';
+      var removeButton = $(removeBtn);
+      $(addto).after(newInput);
+      $(addRemove).after(removeButton);
+      $("#fielda" + next_exp).attr('data-source',$(addto).attr('data-source'));
+      $("#count").val(next_exp);  
+      
+          $('.remove-me').click(function(e){
+              e.preventDefault();
+              var fieldNum = this.id.charAt(this.id.length-1);
+              var fieldID = "#fielda" + fieldNum;
+              $(this).remove();
+              $(fieldID).remove();
+          });
+  });
+  
+      
+  //@naresh action dynamic childs
+  var nextedu = 0;
+  $("#add-more").click(function(e){
+      e.preventDefault();
+      var addto = "#field" + nextedu;
+      var addRemove = "#field" + (nextedu);
+      nextedu = nextedu + 1;
+      var newIn = ' <div id="field'+ nextedu +'" name="field'+ nextedu +'"><div class="form-group"><label class="col-md-3">Education level</label><div class="col-md-7"><select class="form-control"  name="edu_level[]" ><option value="1">High school or equivalent</option><option value="2">Diploma</option><option value="3">Higher National Diploma</option><option value="4">Bachelos</option><option value="5">Masters</option><option value="6">Doctorate</option></select></div></div><br><br><br><!-- Text input--><div class="form-group"><label class="col-md-3">Field of Study</label><div class="col-md-7"><input type="text"  name="field_stu[]" id="field_stu" class="form-control" placeholder="e.g. Computer Science, Intellectual Property,Psychology." required> </div></div><br><br><!-- Text input--><div class="form-group"><label class="col-md-3">University</label><div class="col-md-7"><input type="text"  name="university[]" id="university" class="form-control" placeholder="" required></div></div><br><br><!-- Text input--><div class="form-group"><label class="col-md-3">Time period</label><div class="col-md-8"><div class="col-md-3"><select class="form-control"  name="edu_from[]" ><option value="1995">    1995    </option><option value="1996">	1996	</option><option value="1997">	1997	</option><option value="1998">	1998	</option><option value="1999">	1999	</option><option value="2000">	2000	</option><option value="2001">	2001	</option><option value="2002">	2002	</option><option value="2003">	2003	</option><option value="2004">	2004	</option><option value="2005">	2005	</option><option value="2006">	2006	</option><option value="2007">	2007	</option><option value="2008">	2008	</option><option value="2009">	2009	</option><option value="2010">	2010	</option><option value="2011">	2011	</option><option value="2012">	2012	</option><option value="2013">	2013	</option><option value="2014">	2014	</option><option value="2015">	2015	</option><option value="2016">	2016	</option></select></div><div class="col-md-1"><label>To</label></div><div class="col-md-3"><select class="form-control"  name="edu_to[]" ><option value="1980">	1980	</option><option value="2000">	2000	</option><option value="2001">	2001	</option><option value="2002">	2002	</option><option value="2003">	2003	</option><option value="2004">	2004	</option><option value="2005">	2005	</option><option value="2006">	2006	</option><option value="2007">	2007	</option><option value="2008">	2008	</option><option value="2009">	2009	</option><option value="2010">	2010	</option><option value="2011">	2011	</option><option value="2012">	2012	</option><option value="2013">	2013	</option><option value="2014">	2014	</option><option value="2015">	2015	</option><option value="2016">	2016	</option><option value="2017">	2017	</option><option value="2018">	2018	</option><option value="2019">	2019	</option><option value="2020">	2020	</option></select></div></div></div> <br><hr></div>';
+      var newInput = $(newIn);
+
+      var removeBtn = '<button id="remove' + (nextedu - 1) + '" class="btn btn-danger remove-me" >Remove</button></div></div><script id="field">';
+      var removeButton = $(removeBtn);
+      $(addto).after(newInput);
+      $(addRemove).after(removeButton);
+      $("#field" + nextedu).attr('data-source',$(addto).attr('data-source'));
+      $("#count").val(nextedu);  
+      
+          $('.remove-me').click(function(e){
+              e.preventDefault();
+              var fieldNum = this.id.charAt(this.id.length-1);
+              var fieldID = "#field" + fieldNum;
+              $(this).remove();
+              $(fieldID).remove();
+          });
+  }); 
+  
+    
+  });
+</script>
+<script>
+var currentTab = 0;
+document.addEventListener("DOMContentLoaded", function(event) {
+
+ 
+            showTab(currentTab);
+            
+});
+
+            function showTab(n) {
+              var x = document.getElementsByClassName("tab");
+              x[n].style.display = "block";
+              if (n == 0) {
+                document.getElementById("prevBtn").style.display = "none";
+              } else {
+                document.getElementById("prevBtn").style.display = "inline";
+              }
+              if (n == (x.length - 1)) {
+                document.getElementById("nextBtn").innerHTML = "Submit";
+              } else {
+                document.getElementById("nextBtn").innerHTML = "Next";
+              }
+              fixStepIndicator(n)
+            }
+
+            function nextPrev(n) {
+              var x = document.getElementsByClassName("tab");
+              if (n == 1 && !validateForm()) return false;
+              x[currentTab].style.display = "none";
+              currentTab = currentTab + n;
+              if (currentTab >= x.length) {
+                // document.getElementById("regForm").submit();
+                // return false;
+                //alert("sdf");
+                 document.getElementById("nextprevious").style.display = "none";
+                document.getElementById("all-steps").style.display = "none";
+                document.getElementById("register").style.display = "none";
+                 document.getElementById("text-message").style.display = "block";
+
+
+
+                
+              }
+              showTab(currentTab);
+            }
+
+            function validateForm() {
+              var x, y, i, valid = true;
+              x = document.getElementsByClassName("tab");
+              y = x[currentTab].getElementsByTagName("input");
+              for (i = 0; i < y.length; i++) {
+                if (y[i].value == "") {
+                  y[i].className += " invalid";
+                  valid = false;
+                }
+              }
+              if (valid) {
+                document.getElementsByClassName("step")[currentTab].className += " finish";
+              }
+              return valid;
+            }
+            function fixStepIndicator(n) {
+              var i, x = document.getElementsByClassName("step");
+              for (i = 0; i < x.length; i++) {
+                x[i].className = x[i].className.replace(" active", "");
+              }
+              x[n].className += " active";
+            }
+</script>
+ 
+  </body>
+  </html>

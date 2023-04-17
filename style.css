@@ -684,6 +684,14 @@ ul li a:hover {
 
 .b-services-nav {
 	margin-left: 50px;
+    flex-wrap: wrap;
+    display: flex;
+    list-style-type: none;
+}
+
+.tab{
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
 }
 
 .b-services-nav__item {
@@ -718,8 +726,8 @@ ul li a:hover {
 	font-size: 18px;
 }
 
-.b-services-nav__link.active {
-	background-color: #d01818;
+.b-services-nav .b-services-nav__link.active {
+	background-color: #d01818 !important;
 }
 
 .b-services-nav__link.active .b-services-nav__info {
@@ -757,6 +765,16 @@ ul li a:hover {
 .b-services-nav__info {
 	display: block;
 	color: rgb(32, 30, 30);
+}
+
+.sigma:hover{
+	border: none;
+}
+
+.sigma{
+	border: none !important;
+	color: #495057 !important;
+	background-color: #fff;
 }
 
 /* ////////////////////////end///////////////// */
@@ -1728,6 +1746,16 @@ ul li a:hover {
 .navbar-dark .navbar-nav .nav-link{
     color: black;
 }
+
+.img-responsive{
+	width: 100%;
+}
+
+.center{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /* //////////////////////////////////////////// */
 
 /* mobile responsive */
@@ -1740,6 +1768,10 @@ ul li a:hover {
 	}
 	#mobile-navbar .navbar {
 		display: contents;
+	}
+
+	.center{
+		display: block;
 	}
 }
 /* footer3 end */
@@ -1757,6 +1789,10 @@ ul li a:hover {
 	}
 }
 @media (max-width: 767px){
+
+	.b-services{
+		padding: 0;
+	}
 
 	/* tab section start  */
 	.tab {
@@ -1804,8 +1840,9 @@ ul li a:hover {
 	/* services section start  */
 
 	.b-services-nav {
-		margin-right: 0;
+		margin-right: 20px;
 		margin-left: 0px !important;
+		margin-top: 20px;
 	}
 
 	.b-services-nav__item {
@@ -2037,9 +2074,23 @@ ul li a:hover {
 		width: 100vw;
 		height: 187px;
 	}
+
+	.b-goods-f__list-item {
+		padding: 0px 4px 0px 3px;
+	}
+
+	.b-goods-f__label {
+    margin-left: 0px;
+    padding: 2px 1px;
+	}
+
+	.gallery_product{
+		padding-bottom: 10px;
+	}
 }
 
 @media (min-width: 800px) {
+	
 	.none{
 		display: block;
 	}
@@ -2119,3 +2170,26 @@ ul li a:hover {
 #desktop-nabar{
 	display: block;
 }
+}
+
+[data-tab-content] {
+	display: none;
+  }
+  
+  .active[data-tab-content] {
+	display: block;
+  }
+  
+  /* .tabs {
+	display: flex;
+	justify-content: space-around;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	border-bottom: 1px solid black;
+  } */
+  
+  .tab {
+	cursor: pointer;
+	padding: 10px;
+  }

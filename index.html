@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
     <!-- FONTAWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/brands.min.css">
@@ -27,6 +26,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- end owl -->
+    <!-- slick Carousel CDN -->
+  <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.min.js"></script>
+<script type="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.7/slick.min.js"></script>
+
+ <!-- Main slider-->
+   <script src="assets/plugins/slider-pro/jquery.sliderPro.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <title>Document</title>
@@ -45,7 +50,7 @@
                   </li>
                   <li class="top_list line">Mon to Fri : 9:00am to 6:00pm</li>
                   <li class="top_list me-4">Fairview Ave, El Monte, CA 91732</li>
-                  <a href="#">
+                  <a href="/xcsc.html">
                     <button type="button" class="btn add_list_btn btn-sm px-4 ms-5">
                       <i class="bi bi-list-ul"></i> Add Listings </button>
                     </i>
@@ -74,9 +79,7 @@
             </div>
             <div class="col-lg d-none d-lg-block ps-5 ms-5 mt-4">
               <div class="navbar navbar-expand-md justify-content-end ps-5 ms-5" id="nav">
-                <!-- <button class="navbar-toggler" style="color:red"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon">TEST</span>
-                </button> -->
+                <!-- <button class="navbar-toggler" style="color:red"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon">TEST</span></button> -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="main-menu navbar-nav">
                     <li class="nav-item item active">
@@ -123,12 +126,13 @@
         </div>
       </div>
     </header>
-
     <!-- header mobile -->
     <header class="header navbar-scrolling" id="mobile-navbar">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="/images/logo.png" alt="logo" class="pqrst"></a>
+          <a class="navbar-brand" href="#">
+            <img src="/images/logo.png" alt="logo" class="pqrst">
+          </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -146,15 +150,8 @@
                   </div>
                 </div>
               </li>
-              <!-- <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-              </li> -->
-              <!-- <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-              </li> -->
+              <!-- <li class="nav-item"><a class="nav-link" href="#">Features</a></li> -->
+              <!-- <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li><li class="nav-item"><a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a></li> -->
               <li class="nav-item item active">
                 <a class="nav-link custom_nav" href="home.html">ABOUT</a>
               </li>
@@ -219,7 +216,7 @@
     <!-- slider2 -->
     <!-- <div class="slider2"><div class="background_img2"><img class="img2" src="./images/bg-2.jpg" alt="bg2"><div class="slide-left"><div class="fade-in"><div class="shape"><div class="para"><div class="top_line"><p>EXPERT AUTO SERVICES</p></div><div class="heading"><p class="title">Premium Cars Dealers</p><p class="sub_title">Cars Dealers</p></div></div></div></div></div></div></div> -->
     <!--tab section -->
-    <section class=" bg-light">
+    <section class="bg-light">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -380,7 +377,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="tab-pane fade" id="ex-with-icons-tabs-3" role="tabpanel" aria-labelledby="ex-with-icons-tabs-3">
+                <div class="tab-pane" id="ex-with-icons-tabs-3" role="tabpanel" aria-labelledby="ex-with-icons-tabs-3">
                   <div class="tab-content" id="nav-tab">
                     <div class="tab_main">
                       <form class="tab_form">
@@ -613,79 +610,103 @@
           <div class="col-12">
             <button type="button" class="btn ms-5 mb-5 mt-0 add_list_btn btn-lg section-carousel__btn">
               <i class="bi bi-list-ul"></i> View All Cars Listings </button>
-            </div>
-          </div>
-        </div>
-      </section>     
-    <!-- slider section end -->
-
-    <!-- services section start -->
-    <section class="services py-5 bg-light">
-      <div class="container mt-5" style="max-width: 1170px;">
-        <div class="row">
-          <div class="col-lg-6">
-            <ul class="b-services-nav nav" id="servicesTab">
-              <li class="b-services-nav__item nav-item col-lg-6 col-md-4 col-sm-12">
-                <a class="b-services-nav__link nav-link active show" id="repairing-tab" data-toggle="tab" href="#repairing" role="tab" aria-controls="repairing" aria-selected="true" style="text-decoration:none;">
-                  <span class="b-services-nav__number">01</span>
-                  <i class="bi bi-car-front"></i>
-                  <span class="b-services-nav__info">Parts Repairing</span>
-                </a>
-              </li>
-              <li class="b-services-nav__item nav-item col-lg-6 col-sm-12 col-md-4">
-                <a class="b-services-nav__link nav-link" id="inspection-tab" data-toggle="tab" href="#inspection" aria-controls="inspection" aria-selected="false" style="text-decoration: none;">
-                  <span class="b-services-nav__number">02</span>
-                  <i class="bi bi-gear-wide"></i>
-                  <span class="b-services-nav__info">Car Inspection</span>
-                </a>
-              </li>
-              <li class="b-services-nav__item nav-item col-lg-6 col-md-4">
-                <a class="b-services-nav__link nav-link" id="trade-tab" data-toggle="tab" href="#trade" aria-controls="trade" aria-selected="false" style="text-decoration: none;">
-                  <span class="b-services-nav__number">03</span>
-                  <i class="bi bi-ev-front"></i>
-                  <span class="b-services-nav__info">Vehicle Trade-In</span>
-                </a>
-              </li>
-              <li class="b-services-nav__item nav-item col-lg-6 col-md-4">
-                <a class="b-services-nav__link nav-link" id="painting-tab" data-toggle="tab" href="#painting" aria-controls="painting" aria-selected="false" style="text-decoration: none;">
-                  <span class="b-services-nav__number">04</span>
-                  <i class="bi bi-brush"></i>
-                  <span class="b-services-nav__info">Auto Painting</span>
-                </a>
-              </li>
-              <li class="b-services-nav__item nav-item col-lg-6 col-md-4">
-                <a class="b-services-nav__link nav-link" id="financing-tab" data-toggle="tab" href="#financing" aria-controls="financing" aria-selected="false" style="text-decoration: none;">
-                  <span class="b-services-nav__number">05</span>
-                  <i class="bi bi-cash-coin"></i>
-                  <span class="b-services-nav__info">Auto Financing</span>
-                </a>
-              </li>
-              <li class="b-services-nav__item nav-item col-lg-6 col-md-4">
-                <a class="b-services-nav__link nav-link" id="delivery-tab" data-toggle="tab" href="#delivery" aria-controls="delivery" aria-selected="false" style="text-decoration: none;">
-                  <span class="b-services-nav__number">06</span>
-                  <i class="bi bi-truck-front"></i>
-                  <span class="b-services-nav__info">Vehicle Delivery</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-6">
-            <div class="w-content">HELPS YOU TO FIND YOUR NEXT CAR EASILY</div>
-            <h2 class="w-title mt-0">Services We <span class="w-primary">Offer</span>
-            </h2>
-            <div class="hand mb-4">
-              <img class="img-fluid" src="./images/1 (1).jpg" alt="">
-            </div>
-            <div class="image_bottom_title">
-              <h3>Parts Repairing</h3>
-            </div>
-            <div class="p justify-content-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam hic minus perspiciatis error eum, doloribus ratione similique dolorum officia doloremque rem architecto adipisci. Culpa ducimus dolores ab in unde quia.</div>
           </div>
         </div>
       </div>
     </section>
-    <!-- services section end  -->
-    
+
+    <section class="b-services bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <ul class="b-services-nav tabs">
+              <li class="b-services-nav__item nav-item col-lg-6 col-md-4" role="presentation">
+                <div class="b-services-nav__link">
+                  <span class="b-services-nav__number">01</span>
+                  <i class="bi bi-door-open"></i>
+                  <button class=" active sigma tab" data-tab-target="#home" type="button" >Parts Repairing</button>
+                </div>
+              </li>
+              <li class="b-services-nav__item nav-item col-lg-6 col-md-4" role="presentation">
+                <div class="b-services-nav__link">
+                  <span class="b-services-nav__number">02</span>
+                  <i class="bi bi-hammer"></i>
+                  <button class="nav-link sigma tab" data-tab-target="#profile" type="button">Car Inspection</button>
+                </div>
+              </li>
+              <li class="b-services-nav__item nav-item col-lg-6 col-md-4" role="presentation">
+                <div class="b-services-nav__link">
+                  <span class="b-services-nav__number">03</span>
+                  <i class="bi bi-car-front"></i>
+                  <button class="nav-link sigma tab" data-tab-target="#messages" type="button">Vehicle Trade-In</button>
+                </div>
+              </li>
+              <li class="b-services-nav__item nav-item col-lg-6 col-md-4" role="presentation">
+                <div class="b-services-nav__link">
+                  <span class="b-services-nav__number">04</span>
+                  <i class="bi bi-brush"></i>
+                  <button class="nav-link sigma tab" data-tab-target="#settings" type="button" >Auto Painting</button>
+                </div>
+              </li>
+              <li class="b-services-nav__item nav-item col-lg-6 col-md-4" role="presentation">
+                <div class="b-services-nav__link">
+                  <span class="b-services-nav__number">05</span>
+                  <i class="bi bi-safe2"></i>
+                  <button class="nav-link sigma tab" data-tab-target="#Financing" type="button">Auto Financing</button>
+                </div>
+              </li>
+              <li class="b-services-nav__item nav-item col-lg-6 col-md-4" role="presentation">
+                <div class="b-services-nav__link">
+                  <span class="b-services-nav__number">06</span>
+                  <i class="bi bi-bank2"></i>
+                  <button class="nav-link sigma tab" data-tab-target="#Delivery" type="button">Vehicle Delivery</button>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <div class="b-services__main">
+              <div class="w-content">HELPS YOU TO FIND YOUR NEXT CAR EASILY</div>
+              <h2 class="w-title">Services We <span class="w-primary">Offers</span>
+              </h2>
+              <!-- Tab panes -->
+              <div class="tab-content">
+                <div class="b-services-content__item  active" data-tab-content id="home">
+                  <img class="img-fluid" src="images/1 (1).jpg" alt="img">
+                  <h3 class="b-services-content__title  ui-title-sm">Parts Repairing</h3>
+                  <p class="f-text">Edipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqa Ut enim ad minim veniam, quis nostrud exercitation ullam co laboris nisi ut aliquip comsecdo consequat duis aute irure dolorin reprehenderits. Non proident sunt in culpa qudesa officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="b-services-content__item" id="profile" data-tab-content>
+                  <img class="img-fluid" src="images/1 (1).jpg" alt="img">
+                  <h3 class="b-services-content__title  ui-title-sm">Car Inspection</h3>
+                  <p class="f-text">Edipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqa Ut enim ad minim veniam, quis nostrud exercitation ullam co laboris nisi ut aliquip comsecdo consequat duis aute irure dolorin reprehenderits. Non proident sunt in culpa qudesa officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="b-services-content__item " id="messages" data-tab-content>
+                  <img class="img-fluid" src="images/1 (1).jpg" alt="img">
+                  <h3 class="b-services-content__title ui-title-sm">Vehicle Trade-In</h3>
+                  <p class="f-text">Edipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqa Ut enim ad minim veniam, quis nostrud exercitation ullam co laboris nisi ut aliquip comsecdo consequat duis aute irure dolorin reprehenderits. Non proident sunt in culpa qudesa officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="b-services-content__item " id="settings" data-tab-content>
+                  <img class="img-fluid" src="images/1 (1).jpg" alt="img">
+                  <h3 class="b-services-content__title ui-title-sm">Auto Painting</h3>
+                  <p class="f-text">Edipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqa Ut enim ad minim veniam, quis nostrud exercitation ullam co laboris nisi ut aliquip comsecdo consequat duis aute irure dolorin reprehenderits. Non proident sunt in culpa qudesa officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="b-services-content__item " id="Financing" data-tab-content>
+                  <img class="img-fluid" src="images/1 (1).jpg" alt="img">
+                  <h3 class="b-services-content__title ui-title-sm">Auto Financing</h3>
+                  <p class="f-text">Edipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqa Ut enim ad minim veniam, quis nostrud exercitation ullam co laboris nisi ut aliquip comsecdo consequat duis aute irure dolorin reprehenderits. Non proident sunt in culpa qudesa officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="b-services-content__item" id="Delivery" data-tab-content>
+                  <img class="img-fluid" src="images/1 (1).jpg" alt="img">
+                  <h3 class="b-services-content__title ui-title-sm">Vehicle Delivery</h3>
+                  <p class="f-text">Edipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqa Ut enim ad minim veniam, quis nostrud exercitation ullam co laboris nisi ut aliquip comsecdo consequat duis aute irure dolorin reprehenderits. Non proident sunt in culpa qudesa officia deserunt mollit anim id est laborum.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- /////////////////////////trial end ///////////////////// -->
     <!-- booking section start -->
     <section class="booking">
       <div class="container">
@@ -755,623 +776,184 @@
     <!-- section start cards -->
     <div class="sction_cards mb-5 pb-5">
       <div class="container" style="max-width: 1170px;">
-        <!-- <div class="container"> -->
+        <!-- ///////////////////////cards toggle//////////// -->
         <div class="row">
           <div class="col-12 text-center">
             <div class="w-content">HELPS YOU TO FIND PERFECT CAR</div>
             <h2 class="w-title mt-0">Our Vehicles <span class="w-primary"> Listing </span>
             </h2>
-            <ul class="tabs_card justify-content-center">
-              <li class="tabs_card_li px-3 mx-2">
-                <a href="">Show All</a>
-              </li>
-              <li class="tabs_card_li px-3">
-                <a href="">BMW</a>
-              </li>
-              <li class="tabs_card_li px-3 mx-2">
-                <a href="">Honda</a>
-              </li>
-              <li class="tabs_card_li px-3 mx-2">
-                <a href="">Mercedes</a>
-              </li>
-              <li class="tabs_card_li px-3 mx-2">
-                <a href="">Range Rover</a>
-              </li>
-            </ul>
           </div>
         </div>
-        <div class="none1">
-          <div class="row mt-5">
-          <div class="col-xl-4 col-lg-4 col-md-6">
-            <div class="display">
-              <div class="all_image">
-                <a href="#">
-                  <img class="img-scale" src="./images/1 (2).jpg" alt="">
-                </a>
-                <div class="footer footer2">
-                  <div class="footer_title text-center py-4 mx-auto">
-                    <span>Jaguar GX 490i</span>
-                  </div>
-                  <ul class="b-goods-f__list ul_custom list-unstyled text-center py-1">
-                    <li class="b-goods-f__list-item s">
-                      <span> 35,000km</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> 2019</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> Manual</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> Petrol</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> 160hp</span>
-                    </li>
-                  </ul>
-                  <div class="dollar text-center pb-4">$30,480</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-4 col-lg-4 col-md-6">
-            <div class="display">
-              <div class="all_image">
-                <a href="#">
-                  <img class="img-scale" src="./images/2 (1).jpg" alt="">
-                </a>
-                <div class="footer footer2">
-                  <div class="footer_title text-center py-4 mx-auto">
-                    <span class="b-goods-f__label bg-primary">NEW</span>
-                    <span>Volkswagen Tiguan</span>
-                  </div>
-                  <ul class="b-goods-f__list ul_custom list-unstyled text-center py-1">
-                    <li class="b-goods-f__list-item s">
-                      <span> 35,000km</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> 2019</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> Manual</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> Petrol</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> 160hp</span>
-                    </li>
-                  </ul>
-                  <div class="dollar text-center pb-4">$45,800</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-4 col-lg-4 col-md-6">
-            <div class="display">
-              <div class="all_image">
-                <a href="#">
-                  <img class="img-scale" src="./images/3 (1).jpg" alt="">
-                </a>
-                <div class="footer footer2">
-                  <div class="footer_title text-center py-4 mx-auto">
-                    <span>Tesla Model RX3</span>
-                  </div>
-                  <ul class="b-goods-f__list ul_custom list-unstyled text-center py-1">
-                    <li class="b-goods-f__list-item s">
-                      <span> 35,000km</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> 2019</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> Manual</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> Petrol</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> 160hp</span>
-                    </li>
-                  </ul>
-                  <div class="dollar text-center pb-4">$18,250</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-4 col-lg-4 col-md-6">
-            <div class="display">
-              <div class="all_image">
-                <a href="#">
-                  <img class="img-scale" src="./images/4 (1).jpg" alt="">
-                </a>
-                <div class="footer footer2">
-                  <div class="footer_title text-center py-4 mx-auto">
-                    <span>Lexus RC 3500</span>
-                  </div>
-                  <ul class="b-goods-f__list ul_custom list-unstyled text-center py-1">
-                    <li class="b-goods-f__list-item s">
-                      <span> 35,000km</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> 2019</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> Manual</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> Petrol</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> 160hp</span>
-                    </li>
-                  </ul>
-                  <div class="dollar text-center pb-4">$26,080</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-4 col-lg-4 col-md-6">
-            <div class="display">
-              <div class="all_image">
-                <a href="#">
-                  <img class="img-scale" src="./images/5.jpg" alt="">
-                </a>
-                <div class="footer footer2">
-                  <div class="footer_title text-center py-4 mx-auto">
-                    <span>Mercedes SX</span>
-                  </div>
-                  <ul class="b-goods-f__list ul_custom list-unstyled text-center py-1">
-                    <li class="b-goods-f__list-item s">
-                      <span> 35,000km</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> 2019</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> Manual</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> Petrol</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> 160hp</span>
-                    </li>
-                  </ul>
-                  <div class="dollar text-center pb-4">$66,500</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-4 col-lg-4 col-md-6">
-            <div class="display">
-              <div class="all_image">
-                <a href="#">
-                  <img class="img-scale" src="./images/6.jpg" alt="">
-                </a>
-                <div class="footer footer2">
-                  <div class="footer_title text-center py-4 mx-auto">
-                    <span>Porsche 911 Targa</span>
-                  </div>
-                  <ul class="b-goods-f__list ul_custom list-unstyled text-center py-1">
-                    <li class="b-goods-f__list-item s">
-                      <span> 35,000km</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> 2019</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> Manual</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> Petrol</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> 160hp</span>
-                    </li>
-                  </ul>
-                  <div class="dollar text-center pb-4">$35,700</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div></div>
-        <!-- <div class="row mt-5">
-          <div class="col-xl-4 col-lg-4 col-md-6">
-            <div class="display">
-              <div class="all_image">
-                <a href="#">
-                  <img class="img-scale" src="./images/1 (2).jpg" alt="">
-                </a>
-                <div class="footer footer2">
-                  <div class="footer_title text-center py-4 mx-auto">
-                    <span>Jaguar GX 490i</span>
-                  </div>
-                  <ul class="b-goods-f__list ul_custom list-unstyled text-center py-1">
-                    <li class="b-goods-f__list-item s">
-                      <span> 35,000km</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> 2019</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> Manual</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> Petrol</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> 160hp</span>
-                    </li>
-                  </ul>
-                  <div class="dollar text-center pb-4">$30,480</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-4 col-lg-4 col-md-6">
-            <div class="display">
-              <div class="all_image">
-                <a href="#">
-                  <img class="img-scale" src="./images/2 (1).jpg" alt="">
-                </a>
-                <div class="footer footer2">
-                  <div class="footer_title text-center py-4 mx-auto">
-                    <span class="b-goods-f__label bg-primary">NEW</span>
-                    <span>Volkswagen Tiguan</span>
-                  </div>
-                  <ul class="b-goods-f__list ul_custom list-unstyled text-center py-1">
-                    <li class="b-goods-f__list-item s">
-                      <span> 35,000km</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> 2019</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> Manual</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> Petrol</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> 160hp</span>
-                    </li>
-                  </ul>
-                  <div class="dollar text-center pb-4">$45,800</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-4 col-lg-4 col-md-6">
-            <div class="display">
-              <div class="all_image">
-                <a href="#">
-                  <img class="img-scale" src="./images/3 (1).jpg" alt="">
-                </a>
-                <div class="footer footer2">
-                  <div class="footer_title text-center py-4 mx-auto">
-                    <span>Tesla Model RX3</span>
-                  </div>
-                  <ul class="b-goods-f__list ul_custom list-unstyled text-center py-1">
-                    <li class="b-goods-f__list-item s">
-                      <span> 35,000km</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> 2019</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> Manual</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> Petrol</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> 160hp</span>
-                    </li>
-                  </ul>
-                  <div class="dollar text-center pb-4">$18,250</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-4 col-lg-4 col-md-6">
-            <div class="display">
-              <div class="all_image">
-                <a href="#">
-                  <img class="img-scale" src="./images/4 (1).jpg" alt="">
-                </a>
-                <div class="footer footer2">
-                  <div class="footer_title text-center py-4 mx-auto">
-                    <span>Lexus RC 3500</span>
-                  </div>
-                  <ul class="b-goods-f__list ul_custom list-unstyled text-center py-1">
-                    <li class="b-goods-f__list-item s">
-                      <span> 35,000km</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> 2019</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> Manual</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> Petrol</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> 160hp</span>
-                    </li>
-                  </ul>
-                  <div class="dollar text-center pb-4">$26,080</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-4 col-lg-4 col-md-6">
-            <div class="display">
-              <div class="all_image">
-                <a href="#">
-                  <img class="img-scale" src="./images/5.jpg" alt="">
-                </a>
-                <div class="footer footer2">
-                  <div class="footer_title text-center py-4 mx-auto">
-                    <span>Mercedes SX</span>
-                  </div>
-                  <ul class="b-goods-f__list ul_custom list-unstyled text-center py-1">
-                    <li class="b-goods-f__list-item s">
-                      <span> 35,000km</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> 2019</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> Manual</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> Petrol</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> 160hp</span>
-                    </li>
-                  </ul>
-                  <div class="dollar text-center pb-4">$66,500</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-4 col-lg-4 col-md-6">
-            <div class="display">
-              <div class="all_image">
-                <a href="#">
-                  <img class="img-scale" src="./images/6.jpg" alt="">
-                </a>
-                <div class="footer footer2">
-                  <div class="footer_title text-center py-4 mx-auto">
-                    <span>Porsche 911 Targa</span>
-                  </div>
-                  <ul class="b-goods-f__list ul_custom list-unstyled text-center py-1">
-                    <li class="b-goods-f__list-item s">
-                      <span> 35,000km</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> 2019</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> Manual</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> Petrol</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> 160hp</span>
-                    </li>
-                  </ul>
-                  <div class="dollar text-center pb-4">$35,700</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> -->
-        <div class="none">
-          <div class="row mt-5">
-          <div class="col-xl-4 col-lg-4 col-md-6">
-            <div class="display">
-              <div class="all_image">
-                <a href="#">
-                  <img class="img-scale" src="./images/1 (2).jpg" alt="">
-                </a>
-                <div class="footer footer2">
-                  <div class="footer_title text-center py-4 mx-auto">
-                    <span>Jaguar GX 490i</span>
-                  </div>
-                  <ul class="b-goods-f__list ul_custom list-unstyled text-center py-1">
-                    <li class="b-goods-f__list-item s">
-                      <span> 35,000km</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> 2019</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> Manual</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> Petrol</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> 160hp</span>
-                    </li>
-                  </ul>
-                  <div class="dollar text-center pb-4">$30,480</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-4 col-lg-4 col-md-6">
-            <div class="display">
-              <div class="all_image">
-                <a href="#">
-                  <img class="img-scale" src="./images/2 (1).jpg" alt="">
-                </a>
-                <div class="footer footer2">
-                  <div class="footer_title text-center py-4 mx-auto">
-                    <span class="b-goods-f__label bg-primary">NEW</span>
-                    <span>Volkswagen Tiguan</span>
-                  </div>
-                  <ul class="b-goods-f__list ul_custom list-unstyled text-center py-1">
-                    <li class="b-goods-f__list-item s">
-                      <span> 35,000km</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> 2019</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> Manual</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> Petrol</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> 160hp</span>
-                    </li>
-                  </ul>
-                  <div class="dollar text-center pb-4">$45,800</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-4 col-lg-4 col-md-6">
-            <div class="display">
-              <div class="all_image">
-                <a href="#">
-                  <img class="img-scale" src="./images/3 (1).jpg" alt="">
-                </a>
-                <div class="footer footer2">
-                  <div class="footer_title text-center py-4 mx-auto">
-                    <span>Tesla Model RX3</span>
-                  </div>
-                  <ul class="b-goods-f__list ul_custom list-unstyled text-center py-1">
-                    <li class="b-goods-f__list-item s">
-                      <span> 35,000km</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> 2019</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> Manual</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> Petrol</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> 160hp</span>
-                    </li>
-                  </ul>
-                  <div class="dollar text-center pb-4">$18,250</div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="center">
+          <button class="btn btn-default filter-button" data-filter="all">Show All</button>
+          <button class="btn btn-default filter-button" data-filter="hdpe">BMW</button>
+          <button class="btn btn-default filter-button" data-filter="sprinkle">Honda</button>
+          <button class="btn btn-default filter-button" data-filter="spray">Mercedes</button>
+          <button class="btn btn-default filter-button" data-filter="irrigation">Range Rover</button>
         </div>
-        <div class="row mt-5">
-          <div class="col-xl-4 col-lg-4 col-md-6">
-            <div class="display">
-              <div class="all_image">
-                <a href="#">
-                  <img class="img-scale" src="./images/4 (1).jpg" alt="">
-                </a>
-                <div class="footer footer2">
-                  <div class="footer_title text-center py-4 mx-auto">
-                    <span>Lexus RC 3500</span>
-                  </div>
-                  <ul class="b-goods-f__list ul_custom list-unstyled text-center py-1">
-                    <li class="b-goods-f__list-item s">
-                      <span> 35,000km</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> 2019</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> Manual</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> Petrol</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> 160hp</span>
-                    </li>
-                  </ul>
-                  <div class="dollar text-center pb-4">$26,080</div>
-                </div>
+        <br />
+        <div class="row">
+          <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
+            <img src="/images/1 (2).jpg" class="img-responsive">
+            <div class="footer footer2">
+              <div class="footer_title text-center py-4 mx-auto">
+                <span class="b-goods-f__label bg-primary">NEW</span>
+                <span>Volkswagen Tiguan</span>
               </div>
+              <ul class="b-goods-f__list ul_custom list-unstyled text-center py-1">
+                <li class="b-goods-f__list-item s">
+                  <span> 35,000km</span>
+                </li>
+                <li class="b-goods-f__list-item s">
+                  <span> 2019</span>
+                </li>
+                <li class="b-goods-f__list-item s">
+                  <span> Manual</span>
+                </li>
+                <li class="b-goods-f__list-item s">
+                  <span> Petrol</span>
+                </li>
+                <li class="b-goods-f__list-item s">
+                  <span> 160hp</span>
+                </li>
+              </ul>
+              <div class="dollar text-center pb-4">$45,800</div>
             </div>
           </div>
-          <div class="col-xl-4 col-lg-4 col-md-6">
-            <div class="display">
-              <div class="all_image">
-                <a href="#">
-                  <img class="img-scale" src="./images/5.jpg" alt="">
-                </a>
-                <div class="footer footer2">
-                  <div class="footer_title text-center py-4 mx-auto">
-                    <span>Mercedes SX</span>
-                  </div>
-                  <ul class="b-goods-f__list ul_custom list-unstyled text-center py-1">
-                    <li class="b-goods-f__list-item s">
-                      <span> 35,000km</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> 2019</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> Manual</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> Petrol</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> 160hp</span>
-                    </li>
-                  </ul>
-                  <div class="dollar text-center pb-4">$66,500</div>
-                </div>
+          <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+            <img src="/images/2 (1).jpg" class="img-responsive">
+            <div class="footer footer2">
+              <div class="footer_title text-center py-4 mx-auto">
+                <span>Tesla Model RX3</span>
               </div>
+              <ul class="b-goods-f__list ul_custom list-unstyled text-center py-1">
+                <li class="b-goods-f__list-item s">
+                  <span> 35,000km</span>
+                </li>
+                <li class="b-goods-f__list-item s">
+                  <span> 2019</span>
+                </li>
+                <li class="b-goods-f__list-item s">
+                  <span> Manual</span>
+                </li>
+                <li class="b-goods-f__list-item s">
+                  <span> Petrol</span>
+                </li>
+                <li class="b-goods-f__list-item s">
+                  <span> 160hp</span>
+                </li>
+              </ul>
+              <div class="dollar text-center pb-4">$18,250</div>
             </div>
           </div>
-          <div class="col-xl-4 col-lg-4 col-md-6">
-            <div class="display">
-              <div class="all_image">
-                <a href="#">
-                  <img class="img-scale" src="./images/6.jpg" alt="">
-                </a>
-                <div class="footer footer2">
-                  <div class="footer_title text-center py-4 mx-auto">
-                    <span>Porsche 911 Targa</span>
-                  </div>
-                  <ul class="b-goods-f__list ul_custom list-unstyled text-center py-1">
-                    <li class="b-goods-f__list-item s">
-                      <span> 35,000km</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> 2019</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> Manual</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> Petrol</span>
-                    </li>
-                    <li class="b-goods-f__list-item s">
-                      <span> 160hp</span>
-                    </li>
-                  </ul>
-                  <div class="dollar text-center pb-4">$35,700</div>
-                </div>
+          <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+            <img src="/images/3 (1).jpg" class="img-responsive">
+            <div class="footer footer2">
+              <div class="footer_title text-center py-4 mx-auto">
+                <span>Lexus RC 3500</span>
               </div>
+              <ul class="b-goods-f__list ul_custom list-unstyled text-center py-1">
+                <li class="b-goods-f__list-item s">
+                  <span> 35,000km</span>
+                </li>
+                <li class="b-goods-f__list-item s">
+                  <span> 2019</span>
+                </li>
+                <li class="b-goods-f__list-item s">
+                  <span> Manual</span>
+                </li>
+                <li class="b-goods-f__list-item s">
+                  <span> Petrol</span>
+                </li>
+                <li class="b-goods-f__list-item s">
+                  <span> 160hp</span>
+                </li>
+              </ul>
+              <div class="dollar text-center pb-4">$26,080</div>
+            </div>
+          </div>
+          <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+            <img src="/images/4 (1).jpg" class="img-responsive">
+            <div class="footer footer2">
+              <div class="footer_title text-center py-4 mx-auto">
+                <span>Mercedes SX</span>
+              </div>
+              <ul class="b-goods-f__list ul_custom list-unstyled text-center py-1">
+                <li class="b-goods-f__list-item s">
+                  <span> 35,000km</span>
+                </li>
+                <li class="b-goods-f__list-item s">
+                  <span> 2019</span>
+                </li>
+                <li class="b-goods-f__list-item s">
+                  <span> Manual</span>
+                </li>
+                <li class="b-goods-f__list-item s">
+                  <span> Petrol</span>
+                </li>
+                <li class="b-goods-f__list-item s">
+                  <span> 160hp</span>
+                </li>
+              </ul>
+              <div class="dollar text-center pb-4">$66,500</div>
+            </div>
+          </div>
+          <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+            <img src="/images/5.jpg" class="img-responsive">
+            <div class="footer footer2">
+              <div class="footer_title text-center py-4 mx-auto">
+                <span>Jaguar GX 490i</span>
+              </div>
+              <ul class="b-goods-f__list ul_custom list-unstyled text-center py-1">
+                <li class="b-goods-f__list-item s">
+                  <span> 35,000km</span>
+                </li>
+                <li class="b-goods-f__list-item s">
+                  <span> 2019</span>
+                </li>
+                <li class="b-goods-f__list-item s">
+                  <span> Manual</span>
+                </li>
+                <li class="b-goods-f__list-item s">
+                  <span> Petrol</span>
+                </li>
+                <li class="b-goods-f__list-item s">
+                  <span> 160hp</span>
+                </li>
+              </ul>
+              <div class="dollar text-center pb-4">$30,480</div>
+            </div>
+          </div>
+          <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+            <img src="/images/6.jpg" class="img-responsive">
+            <div class="footer footer2">
+              <div class="footer_title text-center py-4 mx-auto">
+                <span>Porsche 911 Targa</span>
+              </div>
+              <ul class="b-goods-f__list ul_custom list-unstyled text-center py-1">
+                <li class="b-goods-f__list-item s">
+                  <span> 35,000km</span>
+                </li>
+                <li class="b-goods-f__list-item s">
+                  <span> 2019</span>
+                </li>
+                <li class="b-goods-f__list-item s">
+                  <span> Manual</span>
+                </li>
+                <li class="b-goods-f__list-item s">
+                  <span> Petrol</span>
+                </li>
+                <li class="b-goods-f__list-item s">
+                  <span> 160hp</span>
+                </li>
+              </ul>
+              <div class="dollar text-center pb-4">$35,700</div>
             </div>
           </div>
         </div>
       </div>
-        
-      </div>
+      <!-- ///////////////////////cards toggle end//////////// -->
+    </div>
     </div>
     <!-- section end cards -->
     <!-- section numbers start -->
@@ -1480,7 +1062,8 @@
         <div class="col-xl-4 mx-0 px-0">
           <a href="#" class="slide_image2 same">
             <div class="abxy">
-              <span class="b-goods-f__label f bg-primary">As Low As <strong>1.5% APR</strong></span>
+              <span class="b-goods-f__label f bg-primary">As Low As <strong>1.5% APR</strong>
+              </span>
               <div class="abc_subtitle pt-3 pb-0 mb-0">Off-Road King</div>
               <div class="abc_title">Jaguar I PACE</div>
               <div class="slogan">Limited Time Offer </div>
@@ -1491,8 +1074,7 @@
           <a href="#" class="slide_image3 same">
             <div class="abxy z">
               <div class="abc_subtitle pt-3 pb-0 mb-0">2019 Models</div>
-              <div class="abc_title d-lg-block">All Brands Cars
-                <span class="b-goods-f__label bg-primary ms-3 b-goods-vip__label-3">More Power</span>
+              <div class="abc_title d-lg-block">All Brands Cars <span class="b-goods-f__label bg-primary ms-3 b-goods-vip__label-3">More Power</span>
               </div>
               <div class="slogan text-center">PREMIUM LUXURY </div>
             </div>
@@ -1533,15 +1115,14 @@
                     <i class="bi bi-google"></i>
                   </a>
                 </li>
-            </ul>
+              </ul>
               <div class="team_footer">
                 <div class="name">Alex Leeman</div>
                 <div class="sub_name">Director</div>
               </div>
               <div class="b-team__footer text-center pb-4">
                 <a class="b-team__phone" href="tel:+17553028549">
-                  <i class="bi bi-telephone-inbound" style="color: #d01818;"></i> +1 755 302 8549
-                </a>
+                  <i class="bi bi-telephone-inbound" style="color: #d01818;"></i> +1 755 302 8549 </a>
               </div>
             </div>
           </div>
@@ -1566,15 +1147,14 @@
                     <i class="bi bi-google"></i>
                   </a>
                 </li>
-            </ul>
+              </ul>
               <div class="team_footer">
                 <div class="name">Diago Johnson</div>
                 <div class="sub_name">Sales Manager</div>
               </div>
               <div class="b-team__footer text-center pb-4">
                 <a class="b-team__phone" href="tel:+17553028549">
-                  <i class="bi bi-telephone-inbound" style="color: #d01818;"></i> +1 755 302 8549
-                </a>
+                  <i class="bi bi-telephone-inbound" style="color: #d01818;"></i> +1 755 302 8549 </a>
               </div>
             </div>
           </div>
@@ -1599,15 +1179,14 @@
                     <i class="bi bi-google"></i>
                   </a>
                 </li>
-            </ul>
+              </ul>
               <div class="team_footer">
                 <div class="name">Sophia Lauren</div>
                 <div class="sub_name">Co-Founder</div>
-              </div> 
+              </div>
               <div class="b-team__footer  text-center pb-4">
                 <a class="b-team__phone" href="tel:+17553028549">
-                  <i class="bi bi-telephone-inbound" style="color: #d01818;"></i> +1 755 302 8549
-                </a>
+                  <i class="bi bi-telephone-inbound" style="color: #d01818;"></i> +1 755 302 8549 </a>
               </div>
             </div>
           </div>
@@ -1632,15 +1211,14 @@
                     <i class="bi bi-google"></i>
                   </a>
                 </li>
-            </ul>
+              </ul>
               <div class="team_footer">
                 <div class="name">William Henry</div>
                 <div class="sub_name">Marketing</div>
               </div>
               <div class="b-team__footer text-center pb-4">
                 <a class="b-team__phone" href="tel:+17553028549">
-                  <i class="bi bi-telephone-inbound" style="color: #d01818;"></i> +1 755 302 8549
-                </a>
+                  <i class="bi bi-telephone-inbound" style="color: #d01818;"></i> +1 755 302 8549 </a>
               </div>
             </div>
           </div>
@@ -1648,57 +1226,66 @@
       </div>
     </div>
     <!-- team section end -->
-
     <!-- transparent start -->
-    <section class="section-reviews section-default area-bg ">
+   <section class="section-reviews section-default area-bg ">
       <div class="area-bg__inner">
-          <div class="container-fluid">
-              <div class="row">
-                  <div class="col-12">
-                    <div class="col-12 text-center everything">
-                      <div class="w-content">HELPS YOU TO FIND PERFECT CAR</div>
-                      <h2 class="w-title mt-0" style="color: #fff;">Customer Reviews</h2>
-                      <span class="section-reviews__decor">“</span>
-                    </div>
-                  </div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <div class="col-12 text-center everything">
+                <div class="w-content">HELPS YOU TO FIND PERFECT CAR</div>
+                <h2 class="w-title mt-0" style="color: #fff;">Customer Reviews</h2>
+                <span class="section-reviews__decor">“</span>
               </div>
-              <div class="row">
-                <div class="col-12">
-                  <div class="both">
-                  <div class="col-sm-12 col-md-6">
-                    <div class="b-reviews" style="width: 100%; display: inline-block;">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="both">
+                <div class="col-sm-12 col-md-6">
+                  <div class="b-reviews" style="width: 100%; display: inline-block;">
                     <blockquote class="b-reviews__blockquote">
-                        <div class="b-reviews__wrap">
-                            <p>Norem ipsum dolor sit amet consectetur adipisicing elit aliqua uat enim ad minim veniam, quis nostrud exercita Duis aute irure dolor reprehenderit. Slyly babbled much partook this much in in thus the sauc.</p>
-                        </div>
-                        <cite class="b-reviews__cite" title="Blockquote Title">
-                          <span class="b-reviews__inner">
-                            <span class="b-reviews__name">Tina Olivia</span>
+                      <div class="b-reviews__wrap">
+                        <p>Norem ipsum dolor sit amet consectetur adipisicing elit aliqua uat enim ad minim veniam, quis nostrud exercita Duis aute irure dolor reprehenderit. Slyly babbled much partook this much in in thus the sauc.</p>
+                      </div>
+                      <cite class="b-reviews__cite" title="Blockquote Title">
+                        <span class="b-reviews__inner">
+                          <span class="b-reviews__name">Tina Olivia</span>
                           <span class="b-reviews__category">Customer</span>
                         </span>
                         <span class="b-reviews__author">
                           <img class="img-fluid" src="./images/face-1.jpg" alt="foto">
                         </span>
                       </cite>
-                   </blockquote>
+                    </blockquote>
+                  </div>
                 </div>
-              </div>
-              <div><div class="b-reviews" style="width: 100%; display: inline-block;">
-                <blockquote class="b-reviews__blockquote">
-                    <div class="b-reviews__wrap">
+                <div>
+                  <div class="b-reviews" style="width: 100%; display: inline-block;">
+                    <blockquote class="b-reviews__blockquote">
+                      <div class="b-reviews__wrap">
                         <p>Norem ipsum dolor sit amet consectetur adipisicing elit aliqua. Ut enim ad minim veniam, quis nostrud exercita Duis aute irure dolor reprehenderit.</p>
-                    </div>
-                    <cite class="b-reviews__cite" title="Blockquote Title"><span class="b-reviews__inner"><span class="b-reviews__name">Alexa Cathy</span><span class="b-reviews__category">Customer</span></span><span class="b-reviews__author"><img class="img-fluid" src="./images/face-2.jpg" alt="foto"></span></cite>
-                </blockquote>
-            </div></div>
+                      </div>
+                      <cite class="b-reviews__cite" title="Blockquote Title">
+                        <span class="b-reviews__inner">
+                          <span class="b-reviews__name">Alexa Cathy</span>
+                          <span class="b-reviews__category">Customer</span>
+                        </span>
+                        <span class="b-reviews__author">
+                          <img class="img-fluid" src="./images/face-2.jpg" alt="foto">
+                        </span>
+                      </cite>
+                    </blockquote>
+                  </div>
                 </div>
               </div>
-              </div>
+            </div>
           </div>
+        </div>
       </div>
-  </section>
+    </section>
+    
     <!-- transparent end -->
-
     <!-- second_last start -->
     <div class="team_section second_last">
       <div class="container" style="max-width: 1170px;">
@@ -1729,13 +1316,12 @@
                 </div>
                 <div class="entry-content">
                   <p>Edipisicing eiusmod tempor incididunt labore dolore magna aliqa ust enim ad minim veniams quis nostrud citation ullam co laboris nisi ut aliquip.</p>
-              </div>
-              <div class="entry-footer">
-                <a class="entry-link btn-link" href="#">READ article</a>
-                <span class="entry-views">
-                  <i class="bi bi-chat-left-text pe-1"></i> 52
-                </span>
-              </div>
+                </div>
+                <div class="entry-footer">
+                  <a class="entry-link btn-link" href="#">READ article</a>
+                  <span class="entry-views">
+                    <i class="bi bi-chat-left-text pe-1"></i> 52 </span>
+                </div>
               </div>
             </div>
           </div>
@@ -1758,13 +1344,12 @@
                 </div>
                 <div class="entry-content">
                   <p>Edipisicing eiusmod tempor incididunt labore dolore magna aliqa ust enim ad minim veniams quis nostrud citation ullam co laboris nisi ut aliquip.</p>
-              </div>
-              <div class="entry-footer">
-                <a class="entry-link btn-link" href="#">READ article</a>
-                <span class="entry-views">
-                  <i class="bi bi-chat-left-text pe-1"></i> 52
-                </span>
-              </div>
+                </div>
+                <div class="entry-footer">
+                  <a class="entry-link btn-link" href="#">READ article</a>
+                  <span class="entry-views">
+                    <i class="bi bi-chat-left-text pe-1"></i> 52 </span>
+                </div>
               </div>
             </div>
           </div>
@@ -1787,13 +1372,12 @@
                 </div>
                 <div class="entry-content">
                   <p>Edipisicing eiusmod tempor incididunt labore dolore magna aliqa ust enim ad minim veniams quis nostrud citation ullam co laboris nisi ut aliquip.</p>
-              </div>
-              <div class="entry-footer">
-                <a class="entry-link btn-link" href="#">READ article</a>
-                <span class="entry-views">
-                  <i class="bi bi-chat-left-text pe-1"></i> 52
-                </span>
-              </div>
+                </div>
+                <div class="entry-footer">
+                  <a class="entry-link btn-link" href="#">READ article</a>
+                  <span class="entry-views">
+                    <i class="bi bi-chat-left-text pe-1"></i> 52 </span>
+                </div>
               </div>
             </div>
           </div>
@@ -1801,261 +1385,233 @@
       </div>
     </div>
     <!-- second_last end -->
-
     <!-- banner start -->
     <section class="banner">
       <div class="container" style="max-width: 1170px;">
-          <div class="row">
-              <div class="col-12">
-                  <h2 class="banner__title ui-tilte">Buy Sell Your Car Quickly &amp; Easily with Revus</h2>
-                  <div class="banner__info">Labore dolore magna aliqua minim ipsum sed ipsumveniam quis nostrud exercitation</div>
-                  <a class="banner__btn add_list_btn btn" href="#">GET REGISTERED</a>
-              </div>
-          </div>
-      </div>
-  </section>
-  <!-- banner end -->
-
-  <!-- slider cars start -->
-  <section class="carousel2 w-100">
-      <!-- <div class="slider2">
-        <div class="owl-carousel2 owl-theme">
-          <div class="item">
-            <a href="#">
-              <img src="./images/2 (4).jpg" alt="">
-            </a>
-          </div>
-          <div class="item">
-            <a href="#">
-              <img src="./images/6 (1).jpg" alt="">
-            </a>
-          </div>
-          <div class="item">
-            <a href="#">
-              <img src="./images/8.jpg" alt="">
-            </a>
-          </div>
-          <div class="item">
-            <a href="#">
-              <img src="./images/1 (5).jpg" alt="">
-            </a>
-          </div>
-          <div class="item">
-            <a href="#">
-              <img src="./images/3 (4).jpg" alt="">
-            </a>
-          </div>
-          <div class="item">
-            <a href="#">
-              <img src="./images/7.jpg" alt="">
-            </a>
-          </div>
-          <div class="item">
-            <a href="#">
-              <img src="./images/5 (1).jpg" alt="">
-            </a>
-          </div>
-          <div class="item">
-            <a href="#">
-              <img src="./images/4 (3).jpg" alt="">
-            </a>
-          </div>
-    </div>
-        </div> -->
-  </section>
-  <!-- slider cars end -->
-<div class="row slide-new">
-  <div class="">
-    <div class="slider-new ps-3 mx-0">
-    <div class="owl-carousel owl-theme">
-      <div class="item px-0">
-        <a href="#">
-          <img src="./images/2 (4).jpg" alt="">
-        </a>
-      </div>
-      <div class="item">
-        <a href="#">
-        <img src="./images/6 (1).jpg" alt="">
-        </a>
-      </div>
-      <div class="item">
-        <a href="#">
-          <img src="./images/4 (3).jpg" alt="">
-        </a>
-      </div>
-      <div class="item">
-        <a href="#">
-          <img src="./images/5 (1).jpg" alt="">
-        </a>
-      </div>
-      <div class="item">
-        <a href="#">
-          <img src="./images/7.jpg" alt="">
-        </a>
-      </div>
-      <div class="item">
-        <a href="#">
-          <img src="./images/3 (4).jpg" alt="">
-        </a>
-      </div>
-      <div class="item">
-        <a href="#">
-          <img src="./images/1 (5).jpg" alt="">
-        </a>
-      </div>
-      <div class="item">
-        <a href="#">
-          <img src="./images/8.jpg" alt="">
-        </a>
-      </div>
-      <div class="item px-0">
-        <a href="#">
-          <img src="./images/2 (4).jpg" alt="">
-        </a>
-      </div>
-      <div class="item px-0">
-        <a href="#">
-          <img src="./images/6 (1).jpg" alt="">
-        </a>
-      </div>
-      <div class="item px-0">
-        <a href="#">
-          <img src="./images/4 (3).jpg" alt="">
-        </a>
-      </div>
-  </div>
-</div>
-  </div>
-</div>
-
-  <!-- footer start -->
-  <footer class="footer3">
-    <div class="container" style="max-width: 1170px;">
-      <div class="row mt-5">
-        <div class="col-12 col-sm-12 col-md-12">
-            <div class="text-center">
-                <div class="footer-logo">
-                    <a class="footer-logo__link" href="home.html">
-                      <img class="img-responsive" src="./images/logo-light.png" alt="Logo">
-                    </a>
-                </div>
-                <ul class="footer3 list-unstyled">
-                    <li class="footer__item">
-                      <a class="footer__link" href="#" target="_blank">
-                        <i class="ic fab fa-twitter"></i>
-                      </a>
-                    </li>
-                    <li class="footer__item">
-                      <a class="footer__link" href="#" target="_blank">
-                        <i class="ic fab fa-facebook"></i>
-                      </a>
-                    </li>
-                    <li class="footer__item">
-                      <a class="footer__link" href="#" target="_blank">
-                        <i class="ic fab fa-linkedin"></i>
-                      </a>
-                    </li>
-                    <li class="footer__item">
-                      <a class="footer__link" href="#" target="_blank">
-                        <i class="ic fab fa-google-plus-g"></i>
-                      </a>
-                    </li>
-                    <li class="footer__item">
-                      <a class="footer__link" href="#" target="_blank">
-                        <i class="ic fab fa-pinterest"></i>
-                      </a>
-                    </li>
-                    <li class="footer__item">
-                      <a class="footer__link" href="#" target="_blank">
-                        <i class="ic fas fa-play"></i>
-                      </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-4 col-sm-5">
-        <div class="footer_whole">
-          <div class="footer_head pb-3">
-            Ceipisicing elit sed do eiusmod tempor laboe dolore magna aliqa Ut enim ad minim veniam quis nostrud exercitation ullam co laboris nis aliquip comsecd sed ipsum.
-          </div>
-          <div class="footer-contacts">
-            <div class="footer-contacts__item">
-              <i class="bi bi-geo-alt pe-2"></i>Fairview Ave, El Monte, CA 91732
-            </div>
-            <div class="footer-contacts__item">
-              <i class="bi bi-envelope pe-2"></i>
-              <a href="mailto:support@domain.com">support@domain.com</a>
-            </div>
-            <div class="footer-contacts__item">
-              <i class="bi bi-headset pe-2"></i>
-              Phone:<a href="tel:+17553028549"> +1 755 302 8549</a>
-            </div>
-        </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-sm-3">
         <div class="row">
-            <div class="col-lg-6">
-                <section class="footer-section footer-section_link">
-                    <h3 class="footer-section__title">About Revus</h3>
-                    <ul class="footer-list list-unstyled pt-2">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Inventory</a></li>
-                        <li><a href="#">Parts Shop</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </section>
-            </div>
-            <div class="col-lg-6">
-                <section class="footer-section footer-section_link">
-                    <h3 class="footer-section__title">Customer Links</h3>
-                    <ul class="footer-list list-unstyled pt-2">
-                        <li><a href="#">Latest Cars</a></li>
-                        <li><a href="#">Featured Cars</a></li>
-                        <li><a href="#">Sell Your Car</a></li>
-                        <li><a href="#">Buy a Car</a></li>
-                        <li><a href="#">Reviews</a></li>
-                        <li><a href="#">Latest News</a></li>
-                    </ul>
-                </section>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-4">
-      <section class="footer-section footer-section_subscribe">
-          <h3 class="footer-section__title">Subscribe Newsletter</h3>
-          <form class="footer-form">
-              <div class="footer-form__info pt-2 pb-2">Get our weekly newsletter for latest car news exclusive offers and deals and more.</div>
-              <div class="form-group">
-                  <input class="footer-form__input form-control" type="email" placeholder="your email">
-              </div>
-              <button class="btn btn-sm">
-                <a class=" cust add_list_btn btn-sm section-carousel__btn">Subscribe</a>
-              </button>
-          </form>
-      </section>
-  </div>
-    </div>
-      <div class="row text-center pt-5">
-        <div class="col-lg-12">
-              <div class="copyright">
-                  Copyrights (c) 2019 Revus - Auto Dealer Template. All rights reserved.
-                  <a class="copyright__link" href="privacy-policy.html">Privacy Policy</a>
-              </div>
+          <div class="col-12">
+            <h2 class="banner__title ui-tilte">Buy Sell Your Car Quickly &amp; Easily with Revus</h2>
+            <div class="banner__info">Labore dolore magna aliqua minim ipsum sed ipsumveniam quis nostrud exercitation</div>
+            <a class="banner__btn add_list_btn btn" href="#">GET REGISTERED</a>
           </div>
+        </div>
       </div>
-      <span class="footer__btn-up js-scroll-top">
-        <i class="ic fas fa-angle-up"></i>
-        <img src="./images/go_top.png" alt="go top">
-      </span>
+    </section>
+    <!-- banner end -->
+    <!-- slider cars start -->
+    <section class="carousel2 w-100">
+      <!-- <div class="slider2"><div class="owl-carousel2 owl-theme"><div class="item"><a href="#"><img src="./images/2 (4).jpg" alt=""></a></div><div class="item"><a href="#"><img src="./images/6 (1).jpg" alt=""></a></div><div class="item"><a href="#"><img src="./images/8.jpg" alt=""></a></div><div class="item"><a href="#"><img src="./images/1 (5).jpg" alt=""></a></div><div class="item"><a href="#"><img src="./images/3 (4).jpg" alt=""></a></div><div class="item"><a href="#"><img src="./images/7.jpg" alt=""></a></div><div class="item"><a href="#"><img src="./images/5 (1).jpg" alt=""></a></div><div class="item"><a href="#"><img src="./images/4 (3).jpg" alt=""></a></div></div></div> -->
+    </section>
+    <!-- slider cars end -->
+    <div class="row slide-new">
+      <div class="">
+        <div class="slider-new ps-3 mx-0">
+          <div class="owl-carousel owl-theme">
+            <div class="item px-0">
+              <a href="#">
+                <img src="./images/2 (4).jpg" alt="">
+              </a>
+            </div>
+            <div class="item">
+              <a href="#">
+                <img src="./images/6 (1).jpg" alt="">
+              </a>
+            </div>
+            <div class="item">
+              <a href="#">
+                <img src="./images/4 (3).jpg" alt="">
+              </a>
+            </div>
+            <div class="item">
+              <a href="#">
+                <img src="./images/5 (1).jpg" alt="">
+              </a>
+            </div>
+            <div class="item">
+              <a href="#">
+                <img src="./images/7.jpg" alt="">
+              </a>
+            </div>
+            <div class="item">
+              <a href="#">
+                <img src="./images/3 (4).jpg" alt="">
+              </a>
+            </div>
+            <div class="item">
+              <a href="#">
+                <img src="./images/1 (5).jpg" alt="">
+              </a>
+            </div>
+            <div class="item">
+              <a href="#">
+                <img src="./images/8.jpg" alt="">
+              </a>
+            </div>
+            <div class="item px-0">
+              <a href="#">
+                <img src="./images/2 (4).jpg" alt="">
+              </a>
+            </div>
+            <div class="item px-0">
+              <a href="#">
+                <img src="./images/6 (1).jpg" alt="">
+              </a>
+            </div>
+            <div class="item px-0">
+              <a href="#">
+                <img src="./images/4 (3).jpg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </footer>
-  <!-- footer end -->
-
+    <!-- footer start -->
+    <footer class="footer3">
+      <div class="container" style="max-width: 1170px;">
+        <div class="row mt-5">
+          <div class="col-12 col-sm-12 col-md-12">
+            <div class="text-center">
+              <div class="footer-logo">
+                <a class="footer-logo__link" href="home.html">
+                  <img class="img-responsive1" src="./images/logo-light.png" alt="Logo">
+                </a>
+              </div>
+              <ul class="footer3 list-unstyled">
+                <li class="footer__item">
+                  <a class="footer__link" href="#" target="_blank">
+                    <i class="ic fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#" target="_blank">
+                    <i class="ic fab fa-facebook"></i>
+                  </a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#" target="_blank">
+                    <i class="ic fab fa-linkedin"></i>
+                  </a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#" target="_blank">
+                    <i class="ic fab fa-google-plus-g"></i>
+                  </a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#" target="_blank">
+                    <i class="ic fab fa-pinterest"></i>
+                  </a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#" target="_blank">
+                    <i class="ic fas fa-play"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-sm-5">
+            <div class="footer_whole">
+              <div class="footer_head pb-3"> Ceipisicing elit sed do eiusmod tempor laboe dolore magna aliqa Ut enim ad minim veniam quis nostrud exercitation ullam co laboris nis aliquip comsecd sed ipsum. </div>
+              <div class="footer-contacts">
+                <div class="footer-contacts__item">
+                  <i class="bi bi-geo-alt pe-2"></i>Fairview Ave, El Monte, CA 91732
+                </div>
+                <div class="footer-contacts__item">
+                  <i class="bi bi-envelope pe-2"></i>
+                  <a href="mailto:support@domain.com">support@domain.com</a>
+                </div>
+                <div class="footer-contacts__item">
+                  <i class="bi bi-headset pe-2"></i> Phone: <a href="tel:+17553028549"> +1 755 302 8549</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-3">
+            <div class="row">
+              <div class="col-lg-6">
+                <section class="footer-section footer-section_link">
+                  <h3 class="footer-section__title">About Revus</h3>
+                  <ul class="footer-list list-unstyled pt-2">
+                    <li>
+                      <a href="#">Home</a>
+                    </li>
+                    <li>
+                      <a href="#">Services</a>
+                    </li>
+                    <li>
+                      <a href="#">About us</a>
+                    </li>
+                    <li>
+                      <a href="#">Inventory</a>
+                    </li>
+                    <li>
+                      <a href="#">Parts Shop</a>
+                    </li>
+                    <li>
+                      <a href="#">Contact</a>
+                    </li>
+                  </ul>
+                </section>
+              </div>
+              <div class="col-lg-6">
+                <section class="footer-section footer-section_link">
+                  <h3 class="footer-section__title">Customer Links</h3>
+                  <ul class="footer-list list-unstyled pt-2">
+                    <li>
+                      <a href="#">Latest Cars</a>
+                    </li>
+                    <li>
+                      <a href="#">Featured Cars</a>
+                    </li>
+                    <li>
+                      <a href="#">Sell Your Car</a>
+                    </li>
+                    <li>
+                      <a href="#">Buy a Car</a>
+                    </li>
+                    <li>
+                      <a href="#">Reviews</a>
+                    </li>
+                    <li>
+                      <a href="#">Latest News</a>
+                    </li>
+                  </ul>
+                </section>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <section class="footer-section footer-section_subscribe">
+              <h3 class="footer-section__title">Subscribe Newsletter</h3>
+              <form class="footer-form">
+                <div class="footer-form__info pt-2 pb-2">Get our weekly newsletter for latest car news exclusive offers and deals and more.</div>
+                <div class="form-group">
+                  <input class="footer-form__input form-control" type="email" placeholder="your email">
+                </div>
+                <button class="btn btn-sm">
+                  <a class=" cust add_list_btn btn-sm section-carousel__btn">Subscribe</a>
+                </button>
+              </form>
+            </section>
+          </div>
+        </div>
+        <div class="row text-center pt-5">
+          <div class="col-lg-12">
+            <div class="copyright"> Copyrights (c) 2019 Revus - Auto Dealer Template. All rights reserved. <a class="copyright__link" href="privacy-policy.html">Privacy Policy</a>
+            </div>
+          </div>
+        </div>
+        <span class="footer__btn-up js-scroll-top">
+          <i class="ic fas fa-angle-up"></i>
+          <img src="./images/go_top.png" alt="go top">
+        </span>
+      </div>
+    </footer>
+    <!-- footer end -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script> -->
     <!-- put jquery before owl carousel -->
     <!-- jquery -->
@@ -2087,7 +1643,7 @@
           },
           600: {
             items: 2,
-            slideBy:3
+            slideBy: 3
           },
           1000: {
             items: 3,
@@ -2129,51 +1685,142 @@
       images[0] = "./images/bg-1.jpg";
       images[1] = "./images/bg-2.jpg";
     </script>
+    <script>
+      var owl = $('.owl-carousel');
+      owl.owlCarousel({
+        items: 6,
+        // items change number for slider display on desktop
+        loop: true,
+        margin: 10,
+        nav: true,
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 3
+          },
+          1000: {
+            items: 5
+          }
+        }
+      });
+      $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        slideBy: 1,
+        slidesToShow: 1,
+        autoplay: true,
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 3
+          },
+          1000: {
+            items: 5
+          }
+        }
+      })
+    </script>
+    <script>
+      $(document).ready(function() {
+        $(".filter-button").click(function() {
+          var value = $(this).attr('data-filter');
+          if (value == "all") {
+            //$('.filter').removeClass('hidden');
+            $('.filter').show('1000');
+          } else {
+            //            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+            //            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+            $(".filter").not('.' + value).hide('3000');
+            $('.filter').filter('.' + value).show('3000');
+          }
+        });
+        if ($(".filter-button").removeClass("active")) {
+          $(this).removeClass("active");
+        }
+        $(this).addClass("active");
+      });
+    </script>
+
+    <script>
+      var header = document.getElementById("myTab");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+}
+      </script>
+
+      <script>
+        const tabs = document.querySelectorAll('[data-tab-target]')
+const tabContents = document.querySelectorAll('[data-tab-content]')
+
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    const target = document.querySelector(tab.dataset.tabTarget)
+    tabContents.forEach(tabContent => {
+      tabContent.classList.remove('active')
+    })
+    tabs.forEach(tab => {
+      tab.classList.remove('active')
+    })
+    tab.classList.add('active')
+    target.classList.add('active')
+  })
+})
+      </script>
+
 
 <script>
-  var owl = $('.owl-carousel');
-owl.owlCarousel({
-    items:6, 
-  // items change number for slider display on desktop
-  loop:true,
-    margin:10,
-    nav:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:5
-        }
-    }
+  $(document).ready(function(){
+  $('.carousel').slick({
+    // speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    prevArrow: false,
+        nextArrow: false,
+    // dots:true,
+    // centerMode: true,
+    responsive: [{
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        centerMode: true,
+
+      }
+
+    }, {
+      breakpoint: 800,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        dots: true,
+        infinite: true,
+
+      }
+    },  {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+      }
+    }]
+  });
 });
-
-
-$('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    slideBy:1,
-    slidesToShow:1,
-    autoplay: true,
-
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:5
-        }
-    }
-})
 </script>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
 </html>
